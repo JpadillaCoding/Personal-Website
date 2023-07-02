@@ -11,15 +11,40 @@ export default function Home() {
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
-      const handleMouseDown = (e: MouseEvent) => {
+      window.onmousedown = (e: MouseEvent) => {
+        console.log(track.dataset.mouseDown = e.clientX.toString())
+      }
+      window.onmousemove = (e: MouseEvent) => {
+        const mouseDownValue = track.dataset.mouseDown;
+        if (mouseDownValue !== undefined) {
+          const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
+          const maxDelta = window.innerWidth / 2;
+    
+          const percentage = (mouseDelta / maxDelta) * -100;
+    
+          track.style.transform = `translate(${percentage}%, 0%)`;
+        }
+      }
+
+/*       const handleMouseDown = (e: MouseEvent) => {
         track.dataset.mouseDown = e.clientX.toString();
       };
+      window.onmousemove = (e: MouseEvent) => {
+        const mouseDownValue = track.dataset.mouseDown;
+        if (mouseDownValue !== undefined) {
+          const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
+          const maxDelta = window.innerWidth / 2;
+    
+          const percentage = (mouseDelta / maxDelta) * -100;
+    
+          track.style.transform = `translate(${percentage}%, 50%)`;
+        }
+      } */
+      /* window.addEventListener("mousedown", handleMouseDown);
 
-      window.addEventListener("mousedown", handleMouseDown);
-      console.log(track)
       return () => {
         window.removeEventListener("mousedown", handleMouseDown);
-      };
+      }; */
     }
   }, []);
 
@@ -41,6 +66,7 @@ export default function Home() {
           width={300}
           alt="sample img"
           className={styles.image}
+          draggable="false"
         />
         <Image
           src="/sampleImg.jpeg"
@@ -48,6 +74,7 @@ export default function Home() {
           width={300}
           alt="sample img"
           className={styles.image}
+          draggable="false"
         />
         <Image
           src="/sampleImg.jpeg"
@@ -55,6 +82,7 @@ export default function Home() {
           width={300}
           alt="sample img"
           className={styles.image}
+          draggable="false"
         />
         <Image
           src="/sampleImg.jpeg"
@@ -62,6 +90,7 @@ export default function Home() {
           width={300}
           alt="sample img"
           className={styles.image}
+          draggable="false"
         />
         <Image
           src="/sampleImg.jpeg"
@@ -69,6 +98,7 @@ export default function Home() {
           width={300}
           alt="sample img"
           className={styles.image}
+          draggable="false"
         />
       </div>
     </main>
