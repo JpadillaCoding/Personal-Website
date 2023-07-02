@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 const Navigation = () => {
     return (
         <header>
             <nav>
                 <Link href="/">
-                    Logo
+                    <Image 
+                    src="/logo.png"
+                    height={40}
+                    width={120}
+                    alt="Logo with the name Jose Padilla between brackets"
+                    />
                 </Link>
                 <Link href="/portfolio">
                     Portfolio

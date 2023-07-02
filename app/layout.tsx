@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Navigation from "./components/Navigation";
 
 
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="main">
         <Navigation />
         {children}
       </body>
