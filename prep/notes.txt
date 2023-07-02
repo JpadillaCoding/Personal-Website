@@ -1,0 +1,9 @@
+Link to website inspiration layout: https://daily.dev/blog
+Link to scrolling images of projects: https://www.youtube.com/watch?v=PkADl0HubMY&ab_channel=Hyperplexed
+colors:
+background- #0e1217
+primary letters white- #ffffff
+secondary letters grey- #969799
+section letters yellow- #ffe922
+title letters white- #ffffff
+description blue-grey- #a8b3cf

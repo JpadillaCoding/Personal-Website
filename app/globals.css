@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.page-wrapper {
+  background-color: #0e1217;
+  margin: 20px;
+  padding: 0;
+}
+.nav-wrapper {
+  display: flex;
+}
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 15px 10px 10px 30px;
+  font-size: .8em;
+  color: #969799;
+}
+.nav-link:visited {
+  color: #969799;
+}
+.nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
