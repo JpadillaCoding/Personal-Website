@@ -12,39 +12,27 @@ export default function Home() {
     const track = document.getElementById("img_track");
     if (track) {
       window.onmousedown = (e: MouseEvent) => {
-        console.log(track.dataset.mouseDown = e.clientX.toString())
-      }
-      window.onmousemove = (e: MouseEvent) => {
-        const mouseDownValue = track.dataset.mouseDown;
-        if (mouseDownValue !== undefined) {
-          const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
-          const maxDelta = window.innerWidth / 2;
-    
-          const percentage = (mouseDelta / maxDelta) * -100;
-    
-          track.style.transform = `translate(${percentage}%, 0%)`;
-        }
-      }
-
-/*       const handleMouseDown = (e: MouseEvent) => {
-        track.dataset.mouseDown = e.clientX.toString();
+        (track.dataset.mouseDown = e.clientX.toString());
       };
       window.onmousemove = (e: MouseEvent) => {
         const mouseDownValue = track.dataset.mouseDown;
-        if (mouseDownValue !== undefined) {
+        const prevPercentageValue = track.dataset.prevPercentage
+        if (mouseDownValue !== undefined && prevPercentageValue !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
           const maxDelta = window.innerWidth / 2;
-    
-          const percentage = (mouseDelta / maxDelta) * -100;
-    
-          track.style.transform = `translate(${percentage}%, 50%)`;
-        }
-      } */
-      /* window.addEventListener("mousedown", handleMouseDown);
 
-      return () => {
-        window.removeEventListener("mousedown", handleMouseDown);
-      }; */
+          const percentage = (mouseDelta / maxDelta) * -100;
+          const nextPercentage = parseFloat(prevPercentageValue) + percentage
+
+          track.dataset.percentage = nextPercentage.toString()
+
+          track.style.transform = `translate(${nextPercentage}%, 0%)`;
+        }
+      };
+      window.onmouseup = () => {
+        track.dataset.mouseDownAt = "0"
+        track.dataset.prevPercentage = track.dataset.percentage
+      }
     }
   }, []);
 
@@ -59,7 +47,12 @@ export default function Home() {
           and volunteering as a Full-Stack Developer at Hack For LA.
         </p>
       </div>
-      <div id="img_track" className={styles.img_track} data-mouse-down-at="0">
+      <div
+        id="img_track"
+        className={styles.img_track}
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+      >
         <Image
           src="/sampleImg.jpeg"
           height={200}
