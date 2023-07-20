@@ -12,17 +12,19 @@ export default function Home() {
     const track = document.getElementById("img_track");
     if (track) {
       window.onmousedown = (e: MouseEvent) => {
-        (track.dataset.mouseDown = e.clientX.toString());
+        (track.dataset.mouseDownAt = e.clientX.toString()); 
       };
       window.onmousemove = (e: MouseEvent) => {
-        const mouseDownValue = track.dataset.mouseDown;
-        const prevPercentageValue = track.dataset.prevPercentage
-        if (mouseDownValue !== undefined && prevPercentageValue !== undefined) {
+        if(track.dataset.mouseDownAt === "0") return;
+        //add touch functionality look at code pen
+        const mouseDownValue = track.dataset.mouseDownAt;
+        const prevPercentage = track.dataset.prevPercentage
+        if (mouseDownValue !== undefined && prevPercentage !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
           const maxDelta = window.innerWidth / 2;
 
           const percentage = (mouseDelta / maxDelta) * -100;
-          const nextPercentage = parseFloat(prevPercentageValue) + percentage
+          const nextPercentage = parseFloat(prevPercentage) + percentage
 
           track.dataset.percentage = nextPercentage.toString()
 
@@ -32,7 +34,9 @@ export default function Home() {
       window.onmouseup = () => {
         track.dataset.mouseDownAt = "0"
         track.dataset.prevPercentage = track.dataset.percentage
+        console.log("mouseup funct: ", track.dataset.prevPercentage, track.dataset.mouseDownAt)
       }
+      console.log("parent funct:",track.dataset.prevPercentage, track.dataset.mouseDownAt)
     }
   }, []);
 
