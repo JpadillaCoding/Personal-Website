@@ -21,7 +21,7 @@ export default function Home() {
         const prevPercentage = track.dataset.prevPercentage
         if (mouseDownValue !== undefined && prevPercentage !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
-          const maxDelta = window.innerWidth / 2;
+          const maxDelta = window.innerWidth / 3;
 
           const percentage = (mouseDelta / maxDelta) * -100;
           const nextPercentageUnconstrained = parseFloat(prevPercentage) + percentage
@@ -34,7 +34,7 @@ export default function Home() {
           const images = document.querySelectorAll(`.${styles.image}`)
           for(const image of images) {
             const imgElement = image as HTMLImageElement;
-            imgElement.style.objectPosition = `${nextPercentage + 100}% 50%`
+            imgElement.style.objectPosition = `${80 + nextPercentage}% center`
           }
         }
       };
@@ -63,7 +63,7 @@ export default function Home() {
         data-prev-percentage="0"
       >
         <Image
-          src="/sampleImg2.jpeg"
+          src="/spaceSnap.png"
           height={200}
           width={300}
           alt="sample img"
@@ -71,7 +71,7 @@ export default function Home() {
           draggable="false"
         />
         <Image
-          src="/sampleImg.jpeg"
+          src="/trivia.png"
           height={200}
           width={300}
           alt="sample img"
@@ -79,7 +79,7 @@ export default function Home() {
           draggable="false"
         />
         <Image
-          src="/sampleImg.jpeg"
+          src="/curly.jpg"
           height={200}
           width={300}
           alt="sample img"
@@ -87,7 +87,7 @@ export default function Home() {
           draggable="false"
         />
         <Image
-          src="/sampleImg.jpeg"
+          src="/hackLa.png"
           height={200}
           width={300}
           alt="sample img"
@@ -95,7 +95,15 @@ export default function Home() {
           draggable="false"
         />
         <Image
-          src="/sampleImg.jpeg"
+          src="/calorieTrakr.png"
+          height={200}
+          width={300}
+          alt="sample img"
+          className={styles.image}
+          draggable="false"
+        />
+        <Image
+          src="/nycApi.png"
           height={200}
           width={300}
           alt="sample img"

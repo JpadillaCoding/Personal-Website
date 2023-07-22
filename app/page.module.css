@@ -24,4 +24,5 @@
   object-fit: cover;
   object-position: 100% center;
   user-select: none;
+  border-radius: 5px;
 }
