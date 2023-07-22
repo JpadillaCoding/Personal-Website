@@ -1,3 +1,28 @@
-
-
-
+.main_wrapper {
+  margin-top: 80px;
+}
+.page_title {
+  color: #ffe922;
+  margin-left: 30px;
+  font-size: 2.5em;
+}
+.page_intro {
+  color: #ffffff;
+  padding-right: 350px;
+  line-height: 25px;
+}
+.img_track {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  user-select: none; /* change for selecting a project?*/
+}
+.image {
+  width: 40vmin;
+  height: 40vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  user-select: none;
+  border-radius: 5px;
+}
