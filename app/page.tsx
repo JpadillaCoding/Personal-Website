@@ -24,19 +24,24 @@ export default function Home() {
           const maxDelta = window.innerWidth / 2;
 
           const percentage = (mouseDelta / maxDelta) * -100;
-          const nextPercentage = parseFloat(prevPercentage) + percentage
+          const nextPercentageUnconstrained = parseFloat(prevPercentage) + percentage
+          const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
           track.dataset.percentage = nextPercentage.toString()
 
           track.style.transform = `translate(${nextPercentage}%, 0%)`;
+          
+          const images = document.querySelectorAll(`.${styles.image}`)
+          for(const image of images) {
+            const imgElement = image as HTMLImageElement;
+            imgElement.style.objectPosition = `${nextPercentage + 100}% 50%`
+          }
         }
       };
       window.onmouseup = () => {
         track.dataset.mouseDownAt = "0"
         track.dataset.prevPercentage = track.dataset.percentage
-        console.log("mouseup funct: ", track.dataset.prevPercentage, track.dataset.mouseDownAt)
       }
-      console.log("parent funct:",track.dataset.prevPercentage, track.dataset.mouseDownAt)
     }
   }, []);
 
@@ -58,7 +63,7 @@ export default function Home() {
         data-prev-percentage="0"
       >
         <Image
-          src="/sampleImg.jpeg"
+          src="/sampleImg2.jpeg"
           height={200}
           width={300}
           alt="sample img"

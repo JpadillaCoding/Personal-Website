@@ -16,8 +16,12 @@
   gap: 20px;
   position: absolute;
   left: 50%;
+  user-select: none; /* change for selecting a project?*/
 }
 .image {
+  width: 40vmin;
+  height: 40vmin;
   object-fit: cover;
-  object-position: center;
+  object-position: 100% center;
+  user-select: none;
 }
