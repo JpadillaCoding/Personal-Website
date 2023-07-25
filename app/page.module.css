@@ -19,16 +19,24 @@
 }
 .img_track {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   position: absolute;
   left: 50%;
   user-select: none; /* change for selecting a project?*/
 }
+.img_wrapper {
+  background-color: #17191f;
+  background-clip: padding-box;
+  border: 1px solid #ffe922;
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0px 27px 35px -22px #ffe922;
+}
 .image {
-  width: 40vmin;
+  width: 55vmin;
   height: 40vmin;
   object-fit: cover;
   object-position: 100% center;
   user-select: none;
-  border-radius: 5px;
+  border-radius: 15px;
 }
