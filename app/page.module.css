@@ -23,6 +23,7 @@
   position: absolute;
   left: 50%;
   user-select: none; /* change for selecting a project?*/
+  overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
 }
 .img_wrapper {
   background-color: #17191f;
@@ -30,7 +31,7 @@
   border: 1px solid #ffe922;
   padding: 24px;
   border-radius: 15px;
-  box-shadow: 0px 27px 35px -22px #ffe922;
+  box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
 }
 .image {
   width: 55vmin;
