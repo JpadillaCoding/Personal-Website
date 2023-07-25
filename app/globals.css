@@ -11,11 +11,16 @@
   background-color: #0e1217;
 }
 .nav-wrapper {
-  display: inline-block;
-  padding: 20px 40px;
+  display: flex;
+  padding: 20px 60px;
 }
 .nav-left-items {
   display: flex;
+  flex: 1;
+}
+.nav-right-items {
+  display: flex;
+  gap: 30px;
 }
 .nav-link {
   text-decoration: none;

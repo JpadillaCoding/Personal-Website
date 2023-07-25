@@ -3,13 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 
 const Navigation = () => {
   return (
     <header>
       <nav className="nav-wrapper">
-        <div className="nav-left-items">
           <Link href="/">
             <Image
               src="/logo.png"
@@ -18,6 +18,7 @@ const Navigation = () => {
               alt="Logo with the name Jose Padilla between brackets"
             />
           </Link>
+        <div className="nav-left-items">
           <Link href="/portfolio" className="nav-link">
             PORTFOLIO
           </Link>
@@ -29,9 +30,9 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="nav-right-items">
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faTwitter}/>
+          <FontAwesomeIcon icon={faLinkedin} size="2xl" color="#6f7174" />
+          <FontAwesomeIcon icon={faGithub} size="2xl" color="#6f7174" />
+          <FontAwesomeIcon icon={faTwitter} size="2xl" color="#6f7174" />
         </div>
       </nav>
     </header>
