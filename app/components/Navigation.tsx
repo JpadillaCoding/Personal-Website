@@ -9,8 +9,8 @@ const Navigation = () => {
         <Link href="/">
           <Image
             src="/logo.png"
-            height={40}
-            width={120}
+            height={50}
+            width={150}
             alt="Logo with the name Jose Padilla between brackets"
           />
         </Link>
