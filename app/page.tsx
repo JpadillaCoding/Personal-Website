@@ -63,6 +63,8 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <div className={styles.divider}>
+      </div>
       <div
         id="img_track"
         className={styles.img_track}
