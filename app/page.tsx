@@ -4,10 +4,10 @@
 
 import { useEffect } from "react";
 import styles from "./page.module.css";
-import Image from "next/image";
+import ImageTrack from "./components/Image track/img_track";
 
 export default function Home() {
-  
+
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
@@ -48,8 +48,7 @@ export default function Home() {
       };
     }
   }, []);
-  //make own component and div so the scroll only works on the images
-  //currently works on whole page
+
   return (
     <main className={styles.main_wrapper} id="main_wrapper">
       <div className={styles.intro_wrapper}>
@@ -66,73 +65,7 @@ export default function Home() {
       </div>
       <div className={styles.divider}>
       </div>
-      <div
-        id="img_track"
-        className={styles.img_track}
-        data-mouse-down-at="0"
-        data-prev-percentage="0"
-      >
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/spaceSnap.png"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/trivia.png"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/curly.jpg"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/hackLa.png"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/calorieTrakr.png"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-        <div className={styles.img_wrapper}>
-          <Image
-            src="/nycApi.png"
-            height={200}
-            width={300}
-            alt="sample img"
-            className={styles.image}
-            draggable="false"
-          />
-        </div>
-      </div>
+      <ImageTrack />
     </main>
   );
 }

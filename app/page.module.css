@@ -24,39 +24,3 @@
   background-color: #2d323c;
   margin-bottom: 24px;
 }
-.img_track {
-  display: flex;
-  gap: 30px;
-  position: absolute;
-  left: 50%;
-  user-select: none; /* change for selecting a project?*/
-  overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
-}
-.img_wrapper {
-  background-color: #17191f;
-  background-clip: padding-box;
-  border: 1px solid #ffe922;
-  padding: 24px;
-  border-radius: 15px;
-  box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
-}
-.image {
-  width: 45vmin;
-  height: 30vmin;
-  object-fit: cover;
-  object-position: 100% center;
-  user-select: none;
-  border-radius: 15px;
-}
-
-@media (max-width: 1060px) {
-
-  .image {
-    width: 35vmin;
-    height: 20vmin;
-  }  
-}
-
-@media (max-width: 720px) {
-  /* change text size, anything below this have the navbar collapse*/
-}
