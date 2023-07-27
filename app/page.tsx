@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 export default function Home() {
-  //might need to add overflow: hidden for now scroll bar
+  
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
@@ -51,7 +51,7 @@ export default function Home() {
   //make own component and div so the scroll only works on the images
   //currently works on whole page
   return (
-    <main className={styles.main_wrapper}>
+    <main className={styles.main_wrapper} id="main_wrapper">
       <div className={styles.intro_wrapper}>
         <h1 className={styles.page_title}>Welcome.</h1>
         <div className={styles.page_intro}>
