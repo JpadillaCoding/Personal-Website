@@ -10,28 +10,4 @@
 .page-wrapper {
   background-color: #0e1217;
 }
-.nav-wrapper {
-  display: flex;
-  padding: 20px 60px;
-}
-.nav-left-items {
-  display: flex;
-  flex: 1;
-}
-.nav-right-items {
-  display: flex;
-  gap: 30px;
-}
-.nav-link {
-  text-decoration: none;
-  margin: 15px 10px 10px 30px;
-  font-size: .875rem;
-  color: #b7b8ba;
-}
-.nav-link:visited {
-  color: #b7b8ba;
-}
-.nav-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
+

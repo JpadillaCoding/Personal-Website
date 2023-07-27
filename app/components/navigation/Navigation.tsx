@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./page.module.css"
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -9,7 +10,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 const Navigation = () => {
   return (
     <header>
-      <nav className="nav-wrapper">
+      <nav className={styles.nav_wrapper}>
           <Link href="/">
             <Image
               src="/logo.png"
@@ -18,18 +19,18 @@ const Navigation = () => {
               alt="Logo with the name Jose Padilla between brackets"
             />
           </Link>
-        <div className="nav-left-items">
-          <Link href="/portfolio" className="nav-link">
+        <div className={styles.nav_left_items}>
+          <Link href="/portfolio" className={styles.nav_link}>
             PORTFOLIO
           </Link>
-          <Link href="/about" className="nav-link">
+          <Link href="/about" className={styles.nav_link}>
             ABOUT
           </Link>
-          <Link href="/resume" className="nav-link">
+          <Link href="/resume" className={styles.nav_link}>
             RESUME
           </Link>
         </div>
-        <div className="nav-right-items">
+        <div className={styles.nav_right_items}>
           <FontAwesomeIcon icon={faLinkedin} size="2xl" color="#6f7174" />
           <FontAwesomeIcon icon={faGithub} size="2xl" color="#6f7174" />
           <FontAwesomeIcon icon={faTwitter} size="2xl" color="#6f7174" />
