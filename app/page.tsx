@@ -48,7 +48,8 @@ export default function Home() {
       };
     }
   }, []);
-
+  //make own component and div so the scroll only works on the images
+  //currently works on whole page
   return (
     <main className={styles.main_wrapper}>
       <div className={styles.intro_wrapper}>

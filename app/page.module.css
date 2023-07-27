@@ -1,8 +1,9 @@
 .main_wrapper {
   padding: 0px 60px;
+  width: 100vw;
 }
 .intro_wrapper {
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 40px;
 }
 .page_title {
@@ -13,7 +14,7 @@
 }
 .page_intro {
   color: #ffffff;
-  padding-right: 350px;
+  max-width: 70%;
   line-height: 25px;
   font-size: 1.125rem;
 }
@@ -40,10 +41,22 @@
   box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
 }
 .image {
-  width: 55vmin;
-  height: 40vmin;
+  width: 45vmin;
+  height: 30vmin;
   object-fit: cover;
   object-position: 100% center;
   user-select: none;
   border-radius: 15px;
+}
+
+@media (max-width: 1060px) {
+
+  .image {
+    width: 35vmin;
+    height: 20vmin;
+  }  
+}
+
+@media (max-width: 720px) {
+  /* change text size, anything below this have the navbar collapse*/
 }
