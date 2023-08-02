@@ -1,4 +1,5 @@
 import React from "react";
+import PortfolioItems from "../components/portfolio Items/portfolio_items";
 
 export default function Portfolio() {
   return (
@@ -10,6 +11,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="divider"></div>
+      <PortfolioItems />
     </main>
   );
 }
