@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 
 export const metadata = {

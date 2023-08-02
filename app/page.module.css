@@ -1,28 +1,26 @@
 .main_wrapper {
-  margin-top: 80px;
+  padding: 0px 60px;
+  width: 100vw;
+}
+.intro_wrapper {
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 .page_title {
   color: #ffe922;
-  margin-left: 30px;
-  font-size: 2.5em;
+  margin: 8px auto 16px 30px;
+  font-weight: 700;
+  font-size: 5rem;
 }
 .page_intro {
   color: #ffffff;
-  padding-right: 350px;
+  max-width: 70%;
   line-height: 25px;
+  font-size: 1.125rem;
 }
-.img_track {
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  left: 50%;
-  user-select: none; /* change for selecting a project?*/
-}
-.image {
-  width: 40vmin;
-  height: 40vmin;
-  object-fit: cover;
-  object-position: 100% center;
-  user-select: none;
-  border-radius: 5px;
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #2d323c;
+  margin-bottom: 24px;
 }

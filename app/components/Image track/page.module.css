@@ -1,0 +1,63 @@
+.img_track {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    user-select: none; /* change for selecting a project?*/
+    overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
+    align-items: center;
+  }
+  .img_wrapper {
+    background-color: #17191f;
+    background-clip: padding-box;
+    border: 1px solid #ffe922;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
+  }
+  .image {
+    width: 45vmin;
+    height: 30vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    user-select: none;
+    border-radius: 15px;
+  }
+  .double_chevron {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,2));
+    width: 22px;
+    height: 22px;
+    color: #ffffff;
+}
+.double_chevron::after,
+.double_chevron::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(45deg);
+    top: 7px;
+    left: 6px
+}
+.double_chevron::after {
+    left: 11px
+}
+  
+  @media (max-width: 1060px) {
+  
+    .image {
+      width: 30vmin;
+      height: 20vmin;
+    }  
+  }
+  
+  @media (max-width: 720px) {
+    /* change text size, anything below this have the navbar collapse*/
+  }

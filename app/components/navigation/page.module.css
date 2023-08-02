@@ -1,0 +1,25 @@
+.nav_wrapper {
+    display: flex;
+    padding: 20px 60px;
+  }
+  .nav_left_items {
+    display: flex;
+    flex: 1;
+  }
+  .nav_right_items {
+    display: flex;
+    gap: 30px;
+  }
+  .nav_link {
+    text-decoration: none;
+    margin: 15px 10px 10px 30px;
+    font-size: .875rem;
+    color: #b7b8ba;
+  }
+  .nav_link:visited {
+    color: #b7b8ba;
+  }
+  .nav_link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
