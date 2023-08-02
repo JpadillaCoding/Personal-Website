@@ -1,13 +1,13 @@
-import styles from "./page.module.css";
+
 import ImageTrack from "./components/Image track/img_track";
 
 export default function Home() {
 
   return (
-    <main className={styles.main_wrapper} id="main_wrapper">
-      <div className={styles.intro_wrapper}>
-        <h1 className={styles.page_title}>Welcome.</h1>
-        <div className={styles.page_intro}>
+    <main className="main_wrapper" id="main_wrapper">
+      <div className="intro_wrapper">
+        <h1 className="page_title">Welcome.</h1>
+        <div className="page_intro">
           <p>
             My name is Jose Padilla. I'm a Full-Stack Developer in Houston,
             Texas. Programming is a true enjoyment of mine since it accommodates
@@ -17,7 +17,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className={styles.divider}>
+      <div className="divider">
       </div>
       <ImageTrack />
     </main>
