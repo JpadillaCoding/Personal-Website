@@ -53,6 +53,7 @@ export default function ImageTrack() {
         data-mouse-down-at="0"
         data-prev-percentage="0"
       >
+        <i className={styles.double_chevron}></i>
         <div className={styles.img_wrapper}>
           <Image
             src="/spaceSnap.png"

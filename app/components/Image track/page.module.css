@@ -5,6 +5,7 @@
     left: 50%;
     user-select: none; /* change for selecting a project?*/
     overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
+    align-items: center;
   }
   .img_wrapper {
     background-color: #17191f;
@@ -22,11 +23,37 @@
     user-select: none;
     border-radius: 15px;
   }
+  .double_chevron {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    color: white;
+}
+.double_chevron::after,
+.double_chevron::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(45deg);
+    top: 7px;
+    left: 6px
+}
+.double_chevron::after {
+    left: 11px
+}
   
   @media (max-width: 1060px) {
   
     .image {
-      width: 35vmin;
+      width: 30vmin;
       height: 20vmin;
     }  
   }
