@@ -10,6 +10,10 @@
   box-shadow: 0 24px 24px -16px rgba(255, 233, 35, 0.2);
   cursor: pointer;
 }
+.anchor {
+  text-decoration: none;
+  color: inherit;
+}
 .image_wrapper {
   position: relative;
   /* parent container of Image component needs to be relative 
@@ -30,5 +34,4 @@
 .content_tech {
   color: #a8b3cf;
   font-size: .75rem;
-  margin-top: ;
 }

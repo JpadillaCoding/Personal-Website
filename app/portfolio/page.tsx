@@ -23,6 +23,7 @@ export default function Portfolio() {
           description={"HackForLA: Software Engineer volunteer"}
           alt={"screen shot of hack for LA homepage"}
           tech={"Typscript, React, Python, Redux, PostgresSQL, AWS, Docker"}
+          link={"https://www.hackforla.org/"}
         />
         <PortfolioItem
           src={"/curly.jpg"}
@@ -31,30 +32,35 @@ export default function Portfolio() {
           tech={
             "React Native, Express.js, Redux, MongoDB, Google Cloud Services"
           }
+          link={"https://github.com/JpadillaCoding/CurlSafe-Frontend"}
         />
         <PortfolioItem
           src={"/calorieTrakr.png"}
           description={"CalorieTrakr: Web app to track nutrition"}
           alt={"preview of calorie trakr homescreen"}
           tech={"Node.js, Express.js, React, JWT, MongoDB"}
+          link={"https://github.com/JpadillaCoding/Front-end-MERN-Project"}
         />
         <PortfolioItem
           src={"/nycApi.png"}
           description={"NYC Amenities: API for amenities in NYC parks"}
           alt={"preview of NYC amenities api documentation"}
           tech={"Node.js, Express.js, MongoDB, REST API, Postman, Apidocs"}
+          link={"https://github.com/JpadillaCoding/NYC-parks-and-amenities"}
         />
         <PortfolioItem
           src={"/spaceSnap.png"}
           description={"SpaceSnap: NASA image search engine"}
           alt={"preview of space snap home screen"}
-          tech={"React, Bootstrap, API, Asynchronous  programming "}
+          tech={"React, Bootstrap, API, Asynchronous programming "}
+          link={"https://github.com/JpadillaCoding/SpaceSnap"}
         />
         <PortfolioItem
           src={"/trivia.png"}
           description={"WDYKT Trivia: A trivia game"}
           alt={"preview of trivia game homescreen"}
           tech={"Javascript, DOM manipulation, Storybook"}
+          link={"https://github.com/JpadillaCoding/WDYKT-Trivia"}
         />
       </div>
     </main>
