@@ -1,16 +1,25 @@
 .outer_wrapper {
-  background-color: red;
+  background-color: #17191f;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  color: white;
 }
-.inner_wrapper {
+.image_wrapper {
   position: relative;
+  /* parent container of Image component needs to be relative 
+  to make images responsive to the viewport*/
   width: 90%;
   aspect-ratio: 70/45;
   border-radius: 20px;
   margin: 10px;
+  box-shadow: 0 33px 24px -16px rgba(0, 0, 0, 0.24);
+}
+.content_wrapper {
+  margin-top: 24px;
 }

@@ -24,6 +24,11 @@ export default function Portfolio() {
           description={"trivia game"}
           alt={"preview of trivia gmae homescreen"}
         />
+        <PortfolioItem
+          src={"/trivia.png"}
+          description={"trivia game"}
+          alt={"preview of trivia gmae homescreen"}
+        />
       </div>
     </main>
   );

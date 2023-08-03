@@ -9,10 +9,12 @@ export default function PortfolioItem(props: any) {
 
   return (
     <div className={styles.outer_wrapper}>
-      <div className={styles.inner_wrapper}>
+      <div className={styles.image_wrapper}>
           <Image fill src={image} alt={alt} />
       </div>
+      <div className={styles.content_wrapper}>
         <h2>{description}</h2>
+      </div>
     </div>
   );
 }
