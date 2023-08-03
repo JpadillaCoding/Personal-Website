@@ -1,5 +1,6 @@
 import React from "react";
-import PortfolioItems from "../components/portfolio Items/portfolio_items";
+import PortfolioItem from "../components/portfolio Items/portfolio_items";
+import styles from "./page.module.css";
 
 export default function Portfolio() {
   return (
@@ -11,7 +12,15 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="divider"></div>
-      <PortfolioItems height={300}/>
+      <div className={styles.portfolio_items_wrapper}>
+        <PortfolioItem
+          height={200}
+          width={300}
+          src={"/trivia.png"}
+          description={"trivia game"}
+          alt={"preview of trivia gmae homescreen"}
+        />
+      </div>
     </main>
   );
 }
