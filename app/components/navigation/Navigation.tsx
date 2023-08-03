@@ -27,7 +27,7 @@ const Navigation = () => {
             ABOUT
           </Link>
           <Link href="/resume" className={styles.nav_link}>
-            RESUME
+            TAB
           </Link>
         </div>
         <div className={styles.nav_right_items}>

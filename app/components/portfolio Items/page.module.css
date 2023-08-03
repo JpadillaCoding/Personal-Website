@@ -1,0 +1,37 @@
+.outer_wrapper {
+  background-color: #17191f;
+  border-radius: 20px;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  color: white;
+  padding: 24px;
+}
+.outer_wrapper:hover {
+  border-color: #ffe923;
+  box-shadow: 0 24px 24px -16px rgba(255, 233, 35, 0.2);
+  cursor: pointer;
+}
+.anchor {
+  text-decoration: none;
+  color: inherit;
+}
+.image_wrapper {
+  position: relative;
+  /* parent container of Image component needs to be relative 
+  to make images responsive to the viewport*/
+  aspect-ratio: 70/45;
+  border-radius: 20px;
+  box-shadow: 0 33px 24px -16px rgba(0, 0, 0, 0.24);
+}
+.content_wrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.content_description {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.content_tech {
+  color: #a8b3cf;
+  font-size: .75rem;
+}

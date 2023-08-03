@@ -2,7 +2,7 @@ export default function Resume() {
     return (
         <div>
             <h1>
-                Resume
+                Tab
             </h1>
         </div>
     )
