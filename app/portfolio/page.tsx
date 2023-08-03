@@ -1,7 +1,6 @@
 import React from "react";
 import PortfolioItem from "../components/portfolio Items/portfolio_items";
 import styles from "./page.module.css";
-import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -9,7 +8,11 @@ export default function Portfolio() {
       <div className="intro_wrapper">
         <h1 className="page_title">Portfolio.</h1>
         <div className="page_intro">
-          <p>idk</p>
+          <p>
+            Featured projects and experience as a Software Engineer. Each
+            project reinforced my skillset or showcases my adaptability to new
+            technologies.
+          </p>
         </div>
       </div>
       <div className="divider"></div>

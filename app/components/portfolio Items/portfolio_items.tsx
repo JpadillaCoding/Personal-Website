@@ -14,8 +14,8 @@ export default function PortfolioItem(props: any) {
           <Image fill src={image} alt={alt} />
       </div>
       <div className={styles.content_wrapper}>
-        <h2>{description}</h2>
-        <h3>Technologies: {tech}</h3>
+        <h2 className={styles.content_description}>{description}</h2>
+        <h3 className={styles.content_tech}>Technologies: {tech}</h3>
       </div>
     </div>
   );
