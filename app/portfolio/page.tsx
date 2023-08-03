@@ -11,7 +11,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="divider"></div>
-      <PortfolioItems />
+      <PortfolioItems height={300}/>
     </main>
   );
 }
