@@ -15,19 +15,34 @@ export default function Portfolio() {
       <div className="divider"></div>
       <div className={styles.portfolio_items_wrapper}>
         <PortfolioItem
-          src={"/trivia.png"}
-          description={"trivia game"}
-          alt={"preview of trivia gmae homescreen"}
+          src={"/spaceSnap.png"}
+          description={"SpaceSnap: NASA image search engine"}
+          alt={"preview of space snap home screen"}
         />
         <PortfolioItem
           src={"/trivia.png"}
-          description={"trivia game"}
-          alt={"preview of trivia gmae homescreen"}
+          description={"WDYKT Trivia: A trivia game"}
+          alt={"preview of trivia game homescreen"}
         />
         <PortfolioItem
-          src={"/trivia.png"}
-          description={"trivia game"}
-          alt={"preview of trivia gmae homescreen"}
+          src={"/curly.jpg"}
+          description={"CurlSafe: Ingredient analyzer"}
+          alt={"preview of Curl Safe advertisment for the app store"}
+        />
+        <PortfolioItem
+          src={"/hackLa.png"}
+          description={"HackForLA: SoftWare Engineer volunteer"}
+          alt={"screen shot of hack for LA homepage"}
+        />
+        <PortfolioItem
+          src={"/calorieTrakr.png"}
+          description={"CalorieTrakr: Web app to track nutrition"}
+          alt={"preview of calorie trakr homescreen"}
+        />
+        <PortfolioItem
+          src={"/nycApi.png"}
+          description={"NYC Amenities: API for amenities in NYC parks"}
+          alt={"preview of NYC amenities api documentation"}
         />
       </div>
     </main>
