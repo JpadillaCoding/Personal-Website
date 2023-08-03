@@ -1,19 +1,18 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { relative } from "path";
 
 
 export default function PortfolioItem(props:any) {
-    const height:number = props.height
-    const width:number = props.width
     const description:string = props.description
     const image:string = props.src
     const alt:string = props.alt
 
   return (
-    <div>
-        <div>
-            <Image height={height} width={width} src={image} alt={alt} className={styles.image}/>
+    <div className={styles.outer_wrapper}>
+        <div className={styles.inner_wrapper}>
+            <Image fill src={image} alt={alt} />
             <h2>{description}</h2>
         </div>
     </div>
