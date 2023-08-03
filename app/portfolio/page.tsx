@@ -17,9 +17,10 @@ export default function Portfolio() {
       </div>
       <div className="divider"></div>
       <div className={styles.portfolio_items_wrapper}>
+
         <PortfolioItem
           src={"/hackLa.png"}
-          description={"HackForLA: SoftWare Engineer volunteer"}
+          description={"HackForLA: Software Engineer volunteer"}
           alt={"screen shot of hack for LA homepage"}
           tech={"Typscript, React, Python, Redux, PostgresSQL, AWS, Docker"}
         />

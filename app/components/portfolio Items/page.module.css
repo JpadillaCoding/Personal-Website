@@ -1,14 +1,9 @@
 .outer_wrapper {
   background-color: #17191f;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 20px;
   border: 1px solid rgba(168, 179, 207, 0.2);
   color: white;
+  padding: 24px;
 }
 .outer_wrapper:hover {
   border-color: #ffe923;
@@ -19,21 +14,21 @@
   position: relative;
   /* parent container of Image component needs to be relative 
   to make images responsive to the viewport*/
-  width: 90%;
   aspect-ratio: 70/45;
   border-radius: 20px;
-  margin: 10px;
   box-shadow: 0 33px 24px -16px rgba(0, 0, 0, 0.24);
 }
 .content_wrapper {
-  align-items: flex-start;
-  padding: 20px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
 }
 .content_description {
   font-size: 1.5rem;
+  margin-bottom: 12px;
 }
 .content_tech {
   color: #a8b3cf;
-  margin-top: 10px;
   font-size: .75rem;
+  margin-top: ;
 }
