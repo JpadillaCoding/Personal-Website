@@ -12,7 +12,7 @@ export default function PortfolioItem(props:any) {
   return (
     <div className={styles.outer_wrapper}>
         <div className={styles.inner_wrapper}>
-            <Image fill src={image} alt={alt} />
+            <Image fill src={image} alt={alt}/>
             <h2>{description}</h2>
         </div>
     </div>

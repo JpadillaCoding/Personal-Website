@@ -15,8 +15,11 @@ export default function Portfolio() {
       <div className="divider"></div>
       <div className={styles.portfolio_items_wrapper}>
         <PortfolioItem
-          height={200}
-          width={300}
+          src={"/trivia.png"}
+          description={"trivia game"}
+          alt={"preview of trivia gmae homescreen"}
+        />
+        <PortfolioItem
           src={"/trivia.png"}
           description={"trivia game"}
           alt={"preview of trivia gmae homescreen"}
