@@ -1,0 +1,9 @@
+.resume_wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.resume_frame {
+  border: 2px solid rgba(168, 179, 207, 0.2);
+}
