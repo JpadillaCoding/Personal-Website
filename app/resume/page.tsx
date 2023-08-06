@@ -1,9 +1,15 @@
+import styles from "./page.module.css";
+
 export default function Resume() {
-    return (
-        <div>
-            <h1>
-                Tab
-            </h1>
-        </div>
-    )
+  return (
+    <div className={styles.resume_wrapper}>
+      <embed
+        src="https://docs.google.com/document/d/1bwXcVwzp6sHV-imUdj8bVup8Aif4RFmTDJjwSWMjQ-E/edit?usp=sharing"
+        width={"80%"}
+        height={"100%"}
+        className={styles.resume_frame}
+      >
+      </embed>
+    </div>
+  );
 }
