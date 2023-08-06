@@ -2,24 +2,28 @@
     display: flex;
     padding: 20px 60px;
   }
-  .nav_left_items {
+  .nav_left_items_wrapper {
     display: flex;
     flex: 1;
   }
-  .nav_right_items {
+  .nav_right_items_wrapper {
     display: flex;
     gap: 30px;
   }
-  .nav_link {
+  .nav_links_left {
     text-decoration: none;
     margin: 15px 10px 10px 30px;
     font-size: .875rem;
     color: #b7b8ba;
   }
-  .nav_link:visited {
+  .nav_links_left:visited {
     color: #b7b8ba;
   }
-  .nav_link:hover {
+  .nav_links_left:hover {
     color: #ffffff;
     text-decoration: underline;
   }
+  .nav_links_right:hover {
+    color: #ffffff;
+  }
+ 
