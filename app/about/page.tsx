@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className={styles.page_wrapper}>
       <div className={styles.timeline}>
-        <div className={styles.content_container}>
+        <div className={styles["content_container left"]}>
           <h2>First item..</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
