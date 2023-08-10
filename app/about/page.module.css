@@ -1,9 +1,6 @@
-.page_wrapper {
-  box-sizing: border-box;
-}
 .timeline {
-  position: relative;
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
 }
 .timeline::after {
     content: '';
@@ -13,4 +10,12 @@
     top: 0;
     bottom: 0;
     left: 50%;
+    margin-left: -3px;
+}
+.content_container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: silver;
+    width: 50%;
+    box-sizing: border-box;
 }

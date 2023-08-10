@@ -2,9 +2,10 @@ import styles from "./page.module.css";
 
 export default function About() {
   return (
-    <div className={styles.page_wrapper}>
+    <div className="main_wrapper">
       <div className={styles.timeline}>
-        <div className={styles["content_container left"]}>
+        <div className={`${styles.content_container}
+         ${styles.left}`}>
           <h2>First item..</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
