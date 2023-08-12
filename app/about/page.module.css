@@ -1,21 +1,37 @@
 .timeline {
-    position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #ffffff;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 .content_container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: silver;
-    width: 50%;
-    box-sizing: border-box;
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  background-color: #17191f;
+  border-radius: 20px;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  color: white;
+  box-sizing: border-box;
+}
+.content_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left {
+  left: 0;
 }

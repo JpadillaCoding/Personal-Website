@@ -6,6 +6,7 @@ export default function About() {
       <div className={styles.timeline}>
         <div className={`${styles.content_container}
          ${styles.left}`}>
+          <div className={styles.content}>
           <h2>First item..</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -13,6 +14,7 @@ export default function About() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
+          </div>
         </div>
       </div>
     </div>
