@@ -1,8 +1,9 @@
 .timeline {
   position: relative;
+  max-width: 1200px;
   margin: 0 auto;
 }
-.timeline::after {
+.timeline::after { /* timeline verticle line*/
   content: "";
   position: absolute;
   width: 6px;
@@ -15,22 +16,26 @@
   padding: 10px 40px;
   position: relative;
   width: 50%;
-  background-color: #17191f;
-  border-radius: 20px;
-  border: 1px solid rgba(168, 179, 207, 0.2);
-  color: white;
-  box-sizing: border-box;
+  background-color: inherit;
 }
-.content_container::after {
+.content_container::after { /* circles */
   content: '';
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -16px;
   background-color: white;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+}
+.content{
+  border-radius: 20px;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  color: white;
+  padding: 20px 30px;
+  background-color: #17191f;
+  position: relative;
 }
 .left {
   left: 0;
