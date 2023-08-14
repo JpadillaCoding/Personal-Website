@@ -25,7 +25,7 @@
   height: 25px;
   right: -15px;
   background-color: #ffe922;
-  top: 25px;
+  top: 47px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -50,7 +50,7 @@
   content: " ";
   height: 0;
   position: absolute;
-  top: 28px;
+  top: 50px;
   width: 0;
   z-index: 1;
   right: 30px;
@@ -69,4 +69,11 @@
   border: medium solid rgba(168, 179, 207, 0.2);
   border-width: 10px 10px 10px 0px;
   border-color: transparent rgba(168, 179, 207, 0.2) transparent transparent;
+}
+.date {
+  color: #b7b8ba;
+  position: relative;
+  left: 28px;
+  font-size: 1rem;
+  padding: 0px 0px 5px 0px;
 }

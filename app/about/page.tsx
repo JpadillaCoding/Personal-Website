@@ -6,6 +6,7 @@ export default function About() {
       <div className={styles.timeline}>
         <div className={`${styles.content_container}
          ${styles.left}`}>
+          <h3 className={styles.date}>August 2016</h3>
           <div className={styles.content}>
           <h2>First item..</h2>
           <p>
@@ -20,6 +21,7 @@ export default function About() {
       <div className={styles.timeline}>
         <div className={`${styles.content_container}
          ${styles.right}`}>
+          <h3 className={styles.date}>February 2020</h3>
           <div className={styles.content}>
           <h2>Second item..</h2>
           <p>
