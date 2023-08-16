@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 
 export default function About() {
   return (
-    <div className="main_wrapper">
+    <main className="main_wrapper">
       <div className="intro_wrapper">
         <h1 className="page_title">Timeline.</h1>
         <div className="page_intro">
@@ -160,6 +160,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
