@@ -25,7 +25,7 @@ export default function About() {
             <p>
               Dabbled with HTML and CSS in Highschool. I did some after achool
               activies to learn. Although MySpace was phased out, I still used
-              it to mess with markup.
+              it to practicec HTML and CSS.
             </p>
           </div>
         </div>
