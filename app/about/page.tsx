@@ -3,6 +3,17 @@ import styles from "./page.module.css";
 export default function About() {
   return (
     <div className="main_wrapper">
+      <div className="intro_wrapper">
+        <h1 className="page_title">Timeline.</h1>
+        <div className="page_intro">
+          <p>
+            Major milestones through my developer journey. I've started as a
+            self-taught, joined formalized education, and am currently gaining
+            experience as a Software Engineer volunteer!
+          </p>
+        </div>
+      </div>
+      <div className="divider"></div>
       <div className={styles.timeline}>
         <div
           className={`${styles.content_container}
@@ -82,14 +93,14 @@ export default function About() {
             <h2>Formalized Education With General Assembly</h2>
             <p>
               Took a part time course in Software Engineering. I worked full
-              time at 48/hrs per week while juggling the 30/hr a week course for 6 months.
-              The intense schedule was worth it, as every week that I learned
-              somethng new and got to solve problems was pure satisfaction. My
-              proudest moment in this course was being voted most likely to
-              solve a difficult problem by the class and voted most likely to
-              retire in costa rica by our lead instructor. Cheesy stuff, but it
-              feels nice knowing those hours of picking at the tid bit
-              information was paying off.
+              time at 48/hrs per week while juggling the 30/hr a week course for
+              6 months. The intense schedule was worth it, as every week that I
+              learned somethng new and got to solve problems was pure
+              satisfaction. My proudest moment in this course was being voted
+              most likely to solve a difficult problem by the class and voted
+              most likely to retire in costa rica by our lead instructor. Cheesy
+              stuff, but it feels nice knowing those hours of picking at the tid
+              bit information was paying off.
             </p>
           </div>
         </div>
@@ -103,12 +114,13 @@ export default function About() {
           <div className={styles.content}>
             <h2>Software Engineer Volunteer With Hack For LA- Website Team</h2>
             <p>
-              Hack For LA has been a wonderful opportunity to 
-              develop collaboration skills, learning bets practice, and 
-              growing as a developer. I've learned a lot through participating 
-              in meetings, getting pull request reviews, and reviewing pull request. 
-              Added new features to the website and even got to try out opitimizing their GitHub workflow
-              by automating a part of the issue system on the project board.
+              Hack For LA has been a wonderful opportunity to develop
+              collaboration skills, learning bets practice, and growing as a
+              developer. I've learned a lot through participating in meetings,
+              getting pull request reviews, and reviewing pull request. Added
+              new features to the website and even got to try out opitimizing
+              their GitHub workflow by automating a part of the issue system on
+              the project board.
             </p>
           </div>
         </div>
@@ -122,11 +134,11 @@ export default function About() {
           <div className={styles.content}>
             <h2>Curl Safe</h2>
             <p>
-              Made a mobile app from scratch using React Native. The 
-              app was made for a forum that had a need of analyzing 
-              ingredients in hair products. I got 100+ downloads and 
-              along with the opportunity to learn Google Cloud Services, solidified 
-              my FrontEnd and BackEnd skills. 
+              Made a mobile app from scratch using React Native. The app was
+              made for a forum that had a need of analyzing ingredients in hair
+              products. I got 100+ downloads and along with the opportunity to
+              learn Google Cloud Services, solidified my FrontEnd and BackEnd
+              skills.
             </p>
           </div>
         </div>
@@ -140,10 +152,10 @@ export default function About() {
           <div className={styles.content}>
             <h2>Hack For LA- Home Unite Us Project</h2>
             <p>
-              Noticed that a technology in demand is Typescript, so I joined 
-              the Home Unite Us Project to grow that skill and also keep my Python 
-              skills up to date. I joined this project during its development phase and have 
-              gotten to contribute from scratch. 
+              Noticed that a technology in demand is Typescript, so I joined the
+              Home Unite Us Project to grow that skill and also keep my Python
+              skills up to date. I joined this project during its development
+              phase and have gotten to contribute from scratch.
             </p>
           </div>
         </div>
