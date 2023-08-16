@@ -7,13 +7,18 @@
     overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
     align-items: center;
   }
+.img_track:hover {
+  .img_wrapper {
+    border: 1px solid #ffe922;
+    box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
+  }
+}
   .img_wrapper {
     background-color: #17191f;
     background-clip: padding-box;
-    border: 1px solid #ffe922;
+    border: 1px solid rgba(168, 179, 207, 0.2);
     padding: 24px;
     border-radius: 15px;
-    box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
   }
   .image {
     width: 45vmin;
