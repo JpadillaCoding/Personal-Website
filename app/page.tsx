@@ -11,7 +11,7 @@ export default function Home() {
           <p>
             My name is Jose Padilla. I'm a Full-Stack Developer in Houston,
             Texas. Programming is a true enjoyment of mine since it accommodates
-            my need of solving problems. Currently I am sharpening my skills
+            my need of solving problems. Currently, I am sharpening my skills
             with projects and volunteering as a Full-Stack Developer at Hack For
             LA.
           </p>
