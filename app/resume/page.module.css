@@ -8,3 +8,6 @@
 .resume_frame {
   border: 2px solid rgba(168, 179, 207, 0.2);
 }
+.resume_frame p {
+  color: #ffffff;
+}

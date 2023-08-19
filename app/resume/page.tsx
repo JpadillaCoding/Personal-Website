@@ -8,12 +8,14 @@ export default function Resume() {
       </div>
       <div className="divider"></div>
       <div className={styles.resume_wrapper}>
-        <embed
-          src="https://docs.google.com/document/d/1bwXcVwzp6sHV-imUdj8bVup8Aif4RFmTDJjwSWMjQ-E/edit?usp=sharing"
+        <object
+          data="https://docs.google.com/document/d/1bwXcVwzp6sHV-imUdj8bVup8Aif4RFmTDJjwSWMjQ-E/edit?usp=sharing"
           width={"80%"}
           height={"100%"}
           className={styles.resume_frame}
-        ></embed>
+        >
+          <p>Browser failed to load the pdf. You can visit this <a href="https://docs.google.com/document//1bwXcVwzp6sHV-imUdj8bVup8Aif4RFmTDJjwSWMjQ-E/edit?usp=sharing">Link</a> to see it on google drive</p>
+        </object>
       </div>
     </main>
   );
