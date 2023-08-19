@@ -13,7 +13,7 @@ export default function PortfolioItem(props: any) {
     <div className={styles.outer_wrapper}>
       <a href={link} target="blank" className={styles.anchor}>
         <div className={styles.image_wrapper}>
-          <Image fill src={image} alt={alt} />
+          <Image fill src={image} alt={alt} className={styles.image}/>
         </div>
         <div className={styles.content_wrapper}>
           <h2 className={styles.content_description}>{description}</h2>

@@ -115,7 +115,7 @@ export default function About() {
             <h2>Software Engineer Volunteer With Hack For LA- Website Team</h2>
             <p>
               Hack For LA has been a wonderful opportunity to develop
-              collaboration skills, learning bets practice, and growing as a
+              collaboration skills, learning best practices, and growing as a
               developer. I've learned a lot through participating in meetings,
               getting pull request reviews, and reviewing pull request. Added
               new features to the website and even got to try out opitimizing
@@ -136,7 +136,7 @@ export default function About() {
             <p>
               Made a mobile app from scratch using React Native. The app was
               made for a forum that had a need of analyzing ingredients in hair
-              products. I got 100+ downloads and along with the opportunity to
+              products. I got 100+ downloads along with the opportunity to
               learn Google Cloud Services, solidified my FrontEnd and BackEnd
               skills.
             </p>
