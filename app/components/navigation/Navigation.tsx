@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -9,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   return (
@@ -22,6 +24,12 @@ const Navigation = () => {
             alt="Logo with the name Jose Padilla between brackets"
           />
         </Link>
+        <FontAwesomeIcon
+          icon={faBars}
+          size="2xl"
+          color="#6f7174"
+          className={styles.bars}
+        />
         <div className={styles.nav_left_items_wrapper}>
           <Link href="/portfolio" className={styles.nav_links_left}>
             PORTFOLIO
@@ -35,13 +43,28 @@ const Navigation = () => {
         </div>
         <div className={styles.nav_right_items_wrapper}>
           <a href="https://www.linkedin.com/in/jose-padilla-978ab5146/">
-            <FontAwesomeIcon icon={faLinkedin} size="2xl" color="#6f7174" className={styles.nav_links_right} />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2xl"
+              color="#6f7174"
+              className={styles.nav_links_right}
+            />
           </a>
           <a href="https://github.com/JpadillaCoding">
-            <FontAwesomeIcon icon={faGithub} size="2xl" color="#6f7174" className={styles.nav_links_right} />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2xl"
+              color="#6f7174"
+              className={styles.nav_links_right}
+            />
           </a>
           <a href="https://twitter.com/__Obelus">
-            <FontAwesomeIcon icon={faTwitter} size="2xl" color="#6f7174" className={styles.nav_links_right} />
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="2xl"
+              color="#6f7174"
+              className={styles.nav_links_right}
+            />
           </a>
         </div>
       </nav>
