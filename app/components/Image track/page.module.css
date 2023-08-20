@@ -6,6 +6,7 @@
     user-select: none; /* change for selecting a project?*/
     overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
     align-items: center;
+    padding-bottom: 20px;
   }
 .img_track:hover {
   .img_wrapper {
@@ -21,8 +22,8 @@
     border-radius: 15px;
   }
   .image {
-    width: 40vmin;
-    height: 30vmin;
+    width: 30vmin;
+    height: 20vmin;
     object-fit: cover;
     object-position: 100% center;
     user-select: none;
@@ -54,15 +55,16 @@
 .double_chevron::after {
     left: 11px
 }
-  
-  @media (max-width: 1060px) {
-  
+  @media (max-width: 768px) { /* mobile view*/
     .image {
-      width: 30vmin;
-      height: 20vmin;
-    }  
+      width: 60vmin;
+      height: 50vmin;
+    }
   }
-  
-  @media (max-width: 720px) {
-    /* change text size, anything below this have the navbar collapse*/
+  @media (min-width: 1190px), (max-height: 670px) { /* for wider screens. max-height accomodates iphone 8.*/
+
+    .image {
+      width: 40vmin;
+      height: 30vmin;
+    }  
   }
