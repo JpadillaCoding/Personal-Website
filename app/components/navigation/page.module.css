@@ -33,23 +33,22 @@
 .bars {
   display: none;
 }
-.bars:hover {
-  color: #ffffff;
-  cursor: pointer;
-}
 
-  @media (max-width: 750px) {
-    .nav_wrapper {
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 16px 0px 16px;
-      flex-wrap: wrap;
-    }
-    .bars{
-      display: flex;
-    }
+@media (max-width: 750px) {
+  .nav_wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px 0px 16px;
+    flex-wrap: wrap;
+  }
+  .bars{
+    display: flex;
+  }
+  .bars:hover {
+    color: #ffffff;
+    cursor: pointer;
+  }
     .nav_items_wrapper {
-      display: flex; /* remove flex */
       position: absolute;
       flex-direction: column;
       right: 16px;

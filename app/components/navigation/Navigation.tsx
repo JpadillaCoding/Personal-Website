@@ -13,13 +13,17 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
-  const [iconColor, setIconColor] = useState("#6f7174")
+  const [iconColor, setIconColor] = useState<string>("#6f7174")
+  const [toggleModal, setToggleModal] = useState<string>("none")
   function toggleColor() {
+    const navBarModal = document.getElementById("nav_wrapper")
     if (iconColor == "#6f7174") {
       setIconColor("#ffffff")
+      setToggleModal("flex")
     }
     else {
       setIconColor("#6f7174")
+      setToggleModal("none")
     }
   }
   return (
@@ -40,7 +44,7 @@ const Navigation = () => {
           className={styles.bars}
           onClick={toggleColor}
         />
-        <div className={styles.nav_items_wrapper}>
+        <div className={styles.nav_items_wrapper} style={{display:toggleModal}}>
           <div className={styles.nav_left_items_wrapper}>
             <Link href="/portfolio" className={styles.nav_links_left}>
               PORTFOLIO
