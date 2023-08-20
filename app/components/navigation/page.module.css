@@ -2,15 +2,18 @@
   display: flex;
   padding: 20px 60px;
 }
+.nav_items_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
 .nav_left_items_wrapper {
   display: flex;
-  flex: 1;
 }
 .nav_right_items_wrapper {
   display: flex;
   gap: 30px;
 }
-
 .nav_links_left {
   text-decoration: none;
   margin: 15px 10px 10px 30px;
@@ -35,7 +38,7 @@
     .nav_wrapper {
       justify-content: space-between;
       align-items: center;
-      padding: 12px 16px 12px 16px;
+      padding: 12px 16px 0px 16px;
       flex-wrap: wrap;
     }
     .bars{
@@ -61,8 +64,8 @@
     }
     .nav_right_items_wrapper {
       display: flex;
+      justify-content: end;
       flex-basis: 100%;
-      top: 70px;
-      gap: 15px;
+      gap: 35px;
     }
   }

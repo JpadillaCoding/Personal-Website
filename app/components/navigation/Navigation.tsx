@@ -30,42 +30,44 @@ const Navigation = () => {
           color="#6f7174"
           className={styles.bars}
         />
-        <div className={styles.nav_left_items_wrapper}>
-          <Link href="/portfolio" className={styles.nav_links_left}>
-            PORTFOLIO
-          </Link>
-          <Link href="/about" className={styles.nav_links_left}>
-            ABOUT
-          </Link>
-          <Link href="/resume" className={styles.nav_links_left}>
-            RESUME
-          </Link>
-        </div>
-        <div className={styles.nav_right_items_wrapper}>
-          <a href="https://www.linkedin.com/in/jose-padilla-978ab5146/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2xl"
-              color="#6f7174"
-              className={styles.nav_links_right}
-            />
-          </a>
-          <a href="https://github.com/JpadillaCoding">
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2xl"
-              color="#6f7174"
-              className={styles.nav_links_right}
-            />
-          </a>
-          <a href="https://twitter.com/__Obelus">
-            <FontAwesomeIcon
-              icon={faTwitter}
-              size="2xl"
-              color="#6f7174"
-              className={styles.nav_links_right}
-            />
-          </a>
+        <div className={styles.nav_items_wrapper}>
+          <div className={styles.nav_left_items_wrapper}>
+            <Link href="/portfolio" className={styles.nav_links_left}>
+              PORTFOLIO
+            </Link>
+            <Link href="/about" className={styles.nav_links_left}>
+              ABOUT
+            </Link>
+            <Link href="/resume" className={styles.nav_links_left}>
+              RESUME
+            </Link>
+          </div>
+          <div className={styles.nav_right_items_wrapper}>
+            <a href="https://www.linkedin.com/in/jose-padilla-978ab5146/">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2xl"
+                color="#6f7174"
+                className={styles.nav_links_right}
+              />
+            </a>
+            <a href="https://github.com/JpadillaCoding">
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="2xl"
+                color="#6f7174"
+                className={styles.nav_links_right}
+              />
+            </a>
+            <a href="https://twitter.com/__Obelus">
+              <FontAwesomeIcon
+                icon={faTwitter}
+                size="2xl"
+                color="#6f7174"
+                className={styles.nav_links_right}
+              />
+            </a>
+          </div>
         </div>
       </nav>
     </header>
