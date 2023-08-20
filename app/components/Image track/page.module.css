@@ -55,24 +55,16 @@
 .double_chevron::after {
     left: 11px
 }
-  
-  @media (min-width: 1190px) {
-  
-    .image {
-      width: 40vmin;
-      height: 30vmin;
-    }  
-  }
-  @media (max-height: 670px) { /* accomodates iphone 8 since it is still a used phone*/
-    .image {
-      width: 40vmin;
-      height: 30vmin;
-    }
-  }
-  
   @media (max-width: 768px) { /* mobile view*/
     .image {
       width: 60vmin;
       height: 50vmin;
     }
+  }
+  @media (min-width: 1190px), (max-height: 670px) { /* for wider screens. max-height accomodates iphone 8.*/
+
+    .image {
+      width: 40vmin;
+      height: 30vmin;
+    }  
   }
