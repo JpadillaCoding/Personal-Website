@@ -33,6 +33,10 @@
 .bars {
   display: none;
 }
+.bars:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
 
   @media (max-width: 750px) {
     .nav_wrapper {

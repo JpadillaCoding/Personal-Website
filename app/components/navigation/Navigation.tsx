@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -13,6 +13,15 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
+  const [iconColor, setIconColor] = useState("#6f7174")
+  function toggleColor() {
+    if (iconColor == "#6f7174") {
+      setIconColor("#ffffff")
+    }
+    else {
+      setIconColor("#6f7174")
+    }
+  }
   return (
     <header>
       <nav className={styles.nav_wrapper}>
@@ -27,8 +36,9 @@ const Navigation = () => {
         <FontAwesomeIcon
           icon={faBars}
           size="2xl"
-          color="#6f7174"
+          color={iconColor}
           className={styles.bars}
+          onClick={toggleColor}
         />
         <div className={styles.nav_items_wrapper}>
           <div className={styles.nav_left_items_wrapper}>
