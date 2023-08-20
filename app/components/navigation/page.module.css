@@ -38,4 +38,16 @@
     .bars{
       display: flex;
     }
+    .nav_left_items_wrapper {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      right: 60px;
+      top: 70px;
+      border-radius: 15px;
+      background-color: #25282c;
+    }
+    .nav_right_items_wrapper {
+      display: none;
+    }
   }
