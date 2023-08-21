@@ -34,7 +34,8 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* nav bar items crash at this amount.
+   Set up for mobile view here*/
   .nav_wrapper {
     justify-content: space-between;
     align-items: center;
