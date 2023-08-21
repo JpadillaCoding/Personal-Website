@@ -83,3 +83,26 @@
   font-size: .85rem;
   padding: 0px 0px 5px 0px;
 }
+
+  @media (max-width: 760px) {
+    .timeline::after { /* timeline verticle line*/
+      left: 26px;
+    }
+    .content_container::after { /* circles */
+      left: 0px;
+    }
+    .right::after{ /* circles right side*/
+      left: 0;
+    }
+    .right, .left {
+      left: 50px;
+    }
+    .left::before { /* arrows left side */
+      top: 50px;
+      width: 0;
+      left: 30px;
+      border: medium solid rgba(168, 179, 207, 0.2);
+      border-width: 10px 10px 10px 0px;
+      border-color: transparent rgba(168, 179, 207, 0.2) transparent transparent;
+    }
+  }
