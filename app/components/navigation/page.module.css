@@ -34,7 +34,7 @@
   display: none;
 }
 
-@media (max-width: 768px) { /* nav bar items crash at this amount.
+@media (max-width: 760px) { /* nav bar items crash at this amount.
    Set up for mobile view here*/
   .nav_wrapper {
     justify-content: space-between;
