@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -14,18 +14,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   const [iconColor, setIconColor] = useState<string>("#6f7174")
-  const [toggleModal, setToggleModal] = useState<string>("none")
+  const [toggleModal, setToggleModal] = useState<boolean>(false)
+
   function toggleColor() {
-    const navBarModal = document.getElementById("nav_wrapper")
-    console.log(navBarModal)
-    if (iconColor == "#6f7174") {
-      setIconColor("#ffffff")
-      setToggleModal("flex")
-    }
-    else {
-      setIconColor("#6f7174")
-      setToggleModal("none")
-    }
+    setIconColor( iconColor === "#6f7174" ? "#ffffff" : "#6f7174")
+    setToggleModal(!toggleModal)
   }
   return (
     <header>
@@ -45,7 +38,7 @@ const Navigation = () => {
           className={styles.bars}
           onClick={toggleColor}
         />
-        <div className={styles.nav_items_wrapper} style={{display:toggleModal}}>
+        <div className={`${styles.nav_items_wrapper} ${toggleModal ? styles.active : ""}`}>
           <div className={styles.nav_left_items_wrapper}>
             <Link href="/portfolio" className={styles.nav_links_left}>
               PORTFOLIO
