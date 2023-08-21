@@ -85,19 +85,26 @@
 }
 
   @media (max-width: 760px) {
-    .timeline::after { /* timeline verticle line*/
-      left: 26px;
+    .page_timeline {
+      width: 100%;
     }
-    .content_container::after { /* circles */
-      left: 0px;
+    .content_container {
+      width: 105%;
+      padding-bottom: 50px;
     }
-    .right::after{ /* circles right side*/
-      left: 0;
+    .content h2{
+      font-size: 1.5rem;
     }
-    .right, .left {
-      left: 50px;
+    .timeline::after { /* timeline verticle line */
+      left: 16px;
     }
-    .left::before { /* arrows left side */
+    .content_container::after, .right::after { /* circles */
+      left: -3px;
+    }
+    .right, .left { /* even/odd items left align */
+      left: 10px;
+    }
+    .left::before { /* arrows odd side */
       top: 50px;
       width: 0;
       left: 30px;
