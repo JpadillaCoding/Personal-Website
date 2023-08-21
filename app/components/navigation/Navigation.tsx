@@ -17,6 +17,7 @@ const Navigation = () => {
   const [toggleModal, setToggleModal] = useState<string>("none")
   function toggleColor() {
     const navBarModal = document.getElementById("nav_wrapper")
+    console.log(navBarModal)
     if (iconColor == "#6f7174") {
       setIconColor("#ffffff")
       setToggleModal("flex")
