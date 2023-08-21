@@ -37,7 +37,7 @@
   background-color: #2d323c;
   margin-bottom: 24px;
 }
-@media (max-width: 768px) { /* mobile view*/
+@media (max-width: 760px) { /* mobile view*/
      .main_wrapper {
       padding: 0px 24px 0px 24px;
     } 
