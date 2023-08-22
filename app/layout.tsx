@@ -3,9 +3,9 @@ import Navigation from "./components/navigation/Navigation";
 
 
 export const metadata = {
-  title: "Jose Padilla Website",
+  title: "Jose Padilla Portfolio",
   description:
-    "Personal website of Jose Padilla for professional networking as a software engineer/ full stack developer",
+    "Personal website of Jose Padilla for professional networking as a Software Engineer/ Full Stack Developer",
 };
 
 export default function RootLayout({
