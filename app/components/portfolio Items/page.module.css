@@ -27,12 +27,17 @@
   display: flex;
   flex-direction: column;
 }
+.content_title {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
 .content_description {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #a8b3cf;
+  margin-bottom: 8px;
 }
 .content_tech {
-  color: #a8b3cf;
+  color: #ffffff;
   font-size: .75rem;
 }
 .image {
