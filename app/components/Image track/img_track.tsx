@@ -44,13 +44,13 @@ export default function ImageTrack() {
         }
       };
       const handleTouchMove = (e:TouchEvent) => {
-        e.preventDefault()
+        e.preventDefault() /* prevents whole page from scrolling on x axis*/
         if (track.dataset.mouseDownAt === "0") return;
         const mouseDownValue = track.dataset.mouseDownAt;
         const prevPercentage = track.dataset.prevPercentage;
         if (mouseDownValue !== undefined && prevPercentage !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.touches[0].clientX;
-          const maxDelta = window.innerWidth / 3;
+          const maxDelta = window.innerWidth / 1 /* on mobile it's lower so images won't zoom through*/
           const percentage = (mouseDelta / maxDelta) * -100;
           const nextPercentageUnconstrained =
             parseFloat(prevPercentage) + percentage;
