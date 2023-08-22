@@ -8,10 +8,15 @@ export default function ImageTrack() {
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
-      track.onmousedown = (e: MouseEvent) => {
+      track.onmousedown = e => handleDown(e)
+      track.ontouchstart = e => handleDown(e.touches[0])
+      track.onmousemove = e => handleMove(e)
+      track.ontouchmove = e => handleMove(e.touches[0])
+
+      const handleDown = (e:any) => {
         track.dataset.mouseDownAt = e.clientX.toString();
       };
-      track.onmousemove = (e: MouseEvent) => {
+      const handleMove = (e:any) => {
         if (track.dataset.mouseDownAt === "0") return;
         //add touch functionality look at code pen
         const mouseDownValue = track.dataset.mouseDownAt;
@@ -39,7 +44,9 @@ export default function ImageTrack() {
           }
         }
       };
-      window.onmouseup = () => {
+      window.onmouseup = e => handleUp(e) 
+      window.ontouchend = e => handleUp(e.touches[0])
+      const handleUp = (e:any) => {
         track.dataset.mouseDownAt = "0";
         track.dataset.prevPercentage = track.dataset.percentage;
       };
