@@ -1,4 +1,3 @@
-
 import ImageTrack from "./components/Image track/img_track";
 
 export default function Home() {
