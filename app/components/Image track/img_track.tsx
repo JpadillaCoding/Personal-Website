@@ -9,9 +9,11 @@ export default function ImageTrack() {
     const track = document.getElementById("img_track");
     if (track) {
       const handleDown = (e:any) => {
+        e.preventDefault()
         track.dataset.mouseDownAt = e.clientX.toString();
       };
       const handleMove = (e:any) => {
+        e.preventDefault()
         if (track.dataset.mouseDownAt === "0") return;
         //add touch functionality look at code pen
         const mouseDownValue = track.dataset.mouseDownAt;
@@ -40,6 +42,7 @@ export default function ImageTrack() {
         }
       };
       const handleUp = (e:any) => {
+        e.preventDefault()
         track.dataset.mouseDownAt = "0";
         track.dataset.prevPercentage = track.dataset.percentage;
       };
