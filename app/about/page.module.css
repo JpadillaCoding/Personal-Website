@@ -83,3 +83,33 @@
   font-size: .85rem;
   padding: 0px 0px 5px 0px;
 }
+
+  @media (max-width: 760px) {
+    .page_timeline {
+      width: 100%;
+    }
+    .content_container {
+      width: 105%;
+      padding-bottom: 50px;
+    }
+    .content h2{
+      font-size: 1.5rem;
+    }
+    .timeline::after { /* timeline verticle line */
+      left: 16px;
+    }
+    .content_container::after, .right::after { /* circles */
+      left: -3px;
+    }
+    .right, .left { /* even/odd items left align */
+      left: 10px;
+    }
+    .left::before { /* arrows odd side */
+      top: 50px;
+      width: 0;
+      left: 30px;
+      border: medium solid rgba(168, 179, 207, 0.2);
+      border-width: 10px 10px 10px 0px;
+      border-color: transparent rgba(168, 179, 207, 0.2) transparent transparent;
+    }
+  }
