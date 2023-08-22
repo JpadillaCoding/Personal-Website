@@ -13,7 +13,7 @@ export default function ImageTrack() {
         track.dataset.mouseDownAt = e.clientX.toString();
       };
       const handleMove = (e:any) => {
-        e.preventDefault()
+
         if (track.dataset.mouseDownAt === "0") return;
         //add touch functionality look at code pen
         const mouseDownValue = track.dataset.mouseDownAt;
