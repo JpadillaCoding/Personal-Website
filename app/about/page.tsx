@@ -7,7 +7,7 @@ export default function About() {
         <h1 className="page_title">Timeline.</h1>
         <div className="page_intro">
           <p>
-            Major milestones through my developer journey. I've started as a
+            Major milestones through my developer journey. I started as a
             self-taught, joined formalized education, and am currently gaining
             experience as a Software Engineer volunteer!
           </p>

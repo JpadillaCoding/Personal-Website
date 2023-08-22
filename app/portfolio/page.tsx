@@ -36,7 +36,7 @@ export default function Portfolio() {
           }
           link={"https://github.com/JpadillaCoding/CurlSafe-Frontend"}
           description={
-            "Mobile app that analyzes hair product ingreidents. Made for a forum that seeks to remove certain ingredients from their hair routine."
+            "Mobile app that analyzes hair product ingredients. Made for a forum that seeks to remove certain ingredients from their hair routine."
           }
         />
         <PortfolioItem
@@ -45,7 +45,7 @@ export default function Portfolio() {
           alt={"preview of calorie trakr homescreen"}
           tech={"Node.js, Express.js, React, JWT, MongoDB"}
           link={"https://github.com/JpadillaCoding/Front-end-MERN-Project"}
-          description={"Collabrative project that helps track micro and macro nutrient intake."}
+          description={"Collaborative project that helps track micro and macro nutrient intake."}
         />
         <PortfolioItem
           src={"/nycApi.png"}
@@ -69,7 +69,7 @@ export default function Portfolio() {
           alt={"preview of trivia game homescreen"}
           tech={"Javascript, DOM manipulation, Storybook"}
           link={"https://github.com/JpadillaCoding/WDYKT-Trivia"}
-          description={"Trivia game with random tid-bit information that I know. It's what I'm known for!"}
+          description={"Trivia game with random tidbit information that I know. It's what I'm known for!"}
         />
       </div>
     </main>
