@@ -2,20 +2,23 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { type } from "os";
 
 export default function ImageTrack() {
-
+  
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
-      const handleDown = (e:any) => {
-        e.preventDefault()
-        track.dataset.mouseDownAt = e.clientX.toString();
+      const handletouchDown = (e:TouchEvent) => {
+        track.dataset.mouseDownAt = e.touches[0].clientX.toString();
+        console.log(e.touches[0].clientX.toString())
       };
-      const handleMove = (e:any) => {
-
+      const handleDown = (e:MouseEvent) => {
+        track.dataset.mouseDownAt = e.clientX.toString();
+        console.log(e.clientX.toString())
+      };
+      const handleMove = (e:MouseEvent) => {
         if (track.dataset.mouseDownAt === "0") return;
-        //add touch functionality look at code pen
         const mouseDownValue = track.dataset.mouseDownAt;
         const prevPercentage = track.dataset.prevPercentage;
         if (mouseDownValue !== undefined && prevPercentage !== undefined) {
@@ -41,17 +44,42 @@ export default function ImageTrack() {
           }
         }
       };
+      const handleTouchMove = (e:TouchEvent) => {
+        if (track.dataset.mouseDownAt === "0") return;
+        const mouseDownValue = track.dataset.mouseDownAt;
+        const prevPercentage = track.dataset.prevPercentage;
+        if (mouseDownValue !== undefined && prevPercentage !== undefined) {
+          const mouseDelta = parseFloat(mouseDownValue) - e.touches[0].clientX;
+          const maxDelta = window.innerWidth / 3;
+          const percentage = (mouseDelta / maxDelta) * -100;
+          const nextPercentageUnconstrained =
+            parseFloat(prevPercentage) + percentage;
+          const nextPercentage = Math.max(
+            Math.min(nextPercentageUnconstrained, 0),
+            -100
+          );
+
+          track.dataset.percentage = nextPercentage.toString();
+
+          track.style.transform = `translate(${nextPercentage}%, 0%)`;
+
+          const images = document.querySelectorAll(`.${styles.image}`);
+          for (const image of images) {
+            const imgElement = image as HTMLImageElement;
+            imgElement.style.objectPosition = `${100 + nextPercentage}% center`;
+          }
+        }
+      };
       const handleUp = (e:any) => {
-        e.preventDefault()
         track.dataset.mouseDownAt = "0";
         track.dataset.prevPercentage = track.dataset.percentage;
       };
       window.onmouseup = e => handleUp(e) 
-      window.ontouchend = e => handleUp(e.touches[0])
+      window.ontouchend = e => handleUp(e)
       track.onmousedown = e => handleDown(e)
-      track.ontouchstart = e => handleDown(e.touches[0])
+      track.ontouchstart = e => handletouchDown(e)
       track.onmousemove = e => handleMove(e)
-      track.ontouchmove = e => handleMove(e.touches[0])
+      track.ontouchmove = e => handleTouchMove(e)
     }
   }, []);
     
