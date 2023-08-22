@@ -46,7 +46,6 @@
     display: flex;
   }
   .bars:hover {
-    color: #ffffff;
     cursor: pointer;
   }
   .nav_items_wrapper {

@@ -38,6 +38,14 @@
   margin-bottom: 24px;
 }
 @media (max-width: 760px) { /* mobile view*/
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+      height: 100vh;
+    }
+    /* above prevents the user from being able to scroll page on x axis b/c of image track */
      .main_wrapper {
       padding: 0px 24px 24px 24px;
     } 
