@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import { type } from "os";
 
 export default function ImageTrack() {
-  
+
   useEffect(() => {
     const track = document.getElementById("img_track");
     if (track) {
@@ -45,6 +45,7 @@ export default function ImageTrack() {
         }
       };
       const handleTouchMove = (e:TouchEvent) => {
+        e.preventDefault()
         if (track.dataset.mouseDownAt === "0") return;
         const mouseDownValue = track.dataset.mouseDownAt;
         const prevPercentage = track.dataset.prevPercentage;
