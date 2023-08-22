@@ -29,15 +29,15 @@
 }
 .content_title {
   font-size: 1.75rem;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 .content_description {
   font-size: 1rem;
-  color: #ffffff;
+  color: #a8b3cf;
   margin-bottom: 8px;
 }
 .content_tech {
-  color: #a8b3cf;
+  color: #ffffff;
   font-size: .75rem;
 }
 .image {
