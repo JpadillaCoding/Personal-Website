@@ -7,7 +7,7 @@ export default function About() {
         <h1 className="page_title">Timeline.</h1>
         <div className="page_intro">
           <p>
-            Major milestones through my developer journey. I've started as a
+            Major milestones through my developer journey. I started as a
             self-taught, joined formalized education, and am currently gaining
             experience as a Software Engineer volunteer!
           </p>
@@ -23,9 +23,9 @@ export default function About() {
           <div className={styles.content}>
             <h2>First exposure</h2>
             <p>
-              Dabbled with HTML and CSS in Highschool. I did some after achool
-              activies to learn. Although MySpace was phased out, I still used
-              it to practicec HTML and CSS.
+              Dabbled with HTML and CSS in Highschool. I did some after school
+                            activities to learn. Although MySpace was phased out, I still used
+              it to practice HTML and CSS.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function About() {
           <div className={styles.content}>
             <h2>Self Teaching With FreeCodeCamp</h2>
             <p>
-              I remembered really enjoying programming from my past exposure. At
+              I remembered enjoying programming from my past exposure. At
               this point I'm already established in my career as a process
               technician, but I want to start doing something I really enjoy. I
               started solidifying my knowledge with more FreeCodeCamp courses-
@@ -73,11 +73,11 @@ export default function About() {
           <div className={styles.content}>
             <h2>More Rigor With Harvard's CS50</h2>
             <p>
-              Online reccomendations pointed to trying out Harvards CS50 since
+              Online recommendations pointed to trying out Harvards CS50 since
               it taught fundamentals. I decided to try it out and see if
               programming could be an enjoyable career change. Lessons were
               taught in C to teach students what's going in behind the scenes of
-              modern languages. In the end this solidified my journey and I
+              modern languages. In the end, this solidified my journey and I
               started looking into my options to formalize my learning.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function About() {
               Took a part time course in Software Engineering. I worked full
               time at 48/hrs per week while juggling the 30/hr a week course for
               6 months. The intense schedule was worth it, as every week that I
-              learned somethng new and got to solve problems was pure
+              learned something new and got to solve problems was pure
               satisfaction. My proudest moment in this course was being voted
               most likely to solve a difficult problem by the class and voted
               most likely to retire in costa rica by our lead instructor. Cheesy
@@ -115,10 +115,10 @@ export default function About() {
             <h2>Software Engineer Volunteer With Hack For LA- Website Team</h2>
             <p>
               Hack For LA has been a wonderful opportunity to develop
-              collaboration skills, learning best practices, and growing as a
+              collaboration skills, learn best practices, and grow as a
               developer. I've learned a lot through participating in meetings,
-              getting pull request reviews, and reviewing pull request. Added
-              new features to the website and even got to try out opitimizing
+              getting pull request reviews, and reviewing pull requests. Added
+              new features to the website and even got to try out optimizing
               their GitHub workflow by automating a part of the issue system on
               the project board.
             </p>

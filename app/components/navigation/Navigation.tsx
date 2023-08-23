@@ -51,7 +51,7 @@ const Navigation = () => {
             </Link>
           </div>
           <div className={styles.nav_right_items_wrapper}>
-            <a href="https://www.linkedin.com/in/jose-padilla-978ab5146/">
+            <a href="https://www.linkedin.com/in/jose-padilla-978ab5146/" target="blank">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2xl"
@@ -59,7 +59,7 @@ const Navigation = () => {
                 className={styles.nav_links_right}
               />
             </a>
-            <a href="https://github.com/JpadillaCoding">
+            <a href="https://github.com/JpadillaCoding" target="blank">
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2xl"
@@ -67,7 +67,7 @@ const Navigation = () => {
                 className={styles.nav_links_right}
               />
             </a>
-            <a href="https://twitter.com/__Obelus">
+            <a href="https://twitter.com/__Obelus" target="blank">
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="2xl"
