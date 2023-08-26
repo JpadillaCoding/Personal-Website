@@ -69,7 +69,9 @@
     font-size: 1rem;
     margin: 0;
     padding: 30px 80px 30px 80px;
-
+    border-bottom: #151618 solid 1px;
+    width: 100%;
+    text-align: center;
   }
   .nav_right_items_wrapper {
     gap: 20px;
