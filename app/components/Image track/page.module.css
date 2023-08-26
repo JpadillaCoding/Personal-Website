@@ -7,14 +7,14 @@
     overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
     align-items: center;
     padding-bottom: 20px;
-    animation: bounce .5s 3;
+    animation: bounce .6s 3;
   }
   @keyframes bounce {
     0%, 100% {
       transform: translateX(0);
     }
     50% {
-      transform: translateX(20px);
+      transform: translateX(-30px);
     }
   }
 .img_track:hover {
