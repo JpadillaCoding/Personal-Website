@@ -74,6 +74,7 @@ export default function ImageTrack() {
       const handleUp = (e:any) => {
         track.dataset.mouseDownAt = "0";
         track.dataset.prevPercentage = track.dataset.percentage;
+        track.classList.remove(styles.dragging)
       };
       window.onmouseup = e => handleUp(e) 
       window.ontouchend = e => handleUp(e)
