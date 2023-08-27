@@ -1,73 +1,82 @@
 .img_track {
-    display: flex;
-    gap: 30px;
-    position: absolute;
-    left: 50%;
-    user-select: none; /* change for selecting a project?*/
-    overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
-    align-items: center;
-    padding-bottom: 20px;
-    animation: bounce .6s 3;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  user-select: none; /* change for selecting a project?*/
+  overflow-x: visible; /* needs to be added or else box shadow is cut off. overflow-x id hidden on root*/
+  align-items: center;
+  padding-bottom: 20px;
+  animation: bounce 0.6s 3;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-30px);
-    }
-  }
-.img_track:hover {
-  .img_wrapper {
-    border: 1px solid #ffe922;
-    box-shadow: 0px 27px 35px -22px rgba(255,233,35,.5);
-    cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+  50% {
+    transform: translateX(-30px);
   }
 }
+.img_track:hover {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+
   .img_wrapper {
-    background-color: #17191f;
-    background-clip: padding-box;
-    border: 1px solid rgba(168, 179, 207, 0.2);
-    padding: 24px;
-    border-radius: 15px;
+    border: 1px solid #ffe922;
+    box-shadow: 0px 27px 35px -22px rgba(255, 233, 35, 0.5);
   }
-  .image {
-    width: 30vmin;
-    height: 20vmin;
-    object-fit: cover;
-    object-position: 100% center;
-    user-select: none;
-    border-radius: 15px;
-  }
-  .double_chevron {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,2));
-    width: 22px;
-    height: 22px;
-    color: #ffffff;
+}
+.dragging {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+.img_wrapper {
+  background-color: #17191f;
+  background-clip: padding-box;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  padding: 24px;
+  border-radius: 15px;
+}
+.image {
+  width: 30vmin;
+  height: 20vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  user-select: none;
+  border-radius: 15px;
+}
+.double_chevron {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 2));
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  cursor: default;
 }
 .double_chevron::after,
 .double_chevron::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    transform: rotate(45deg);
-    top: 7px;
-    left: 6px;
-    /*animation: bounce 1s ; */
-  }
- 
- /* @-webkit-keyframes bounce { 
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+  top: 7px;
+  left: 6px;
+  /*animation: bounce 1s ; */
+}
+
+/* @-webkit-keyframes bounce { 
     0%, 100% {
       -webkit-transform: translateY(0);
     }
@@ -91,18 +100,20 @@
  } */
 
 .double_chevron::after {
-    left: 11px
+  left: 11px;
 }
-  @media (max-width: 768px) { /* mobile view*/
-    .image {
-      width: 60vmin;
-      height: 50vmin;
-    }
+@media (max-width: 768px) {
+  /* mobile view*/
+  .image {
+    width: 60vmin;
+    height: 50vmin;
   }
-  @media (min-width: 1190px), (max-height: 670px) { /* for wider screens. max-height accomodates iphone 8.*/
+}
+@media (min-width: 1190px), (max-height: 670px) {
+  /* for wider screens. max-height accomodates iphone 8.*/
 
-    .image {
-      width: 40vmin;
-      height: 30vmin;
-    }  
+  .image {
+    width: 40vmin;
+    height: 30vmin;
   }
+}
