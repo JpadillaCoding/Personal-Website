@@ -14,7 +14,7 @@ export default function ImageTrack() {
       };
       const handleDown = (e:MouseEvent) => {
         track.dataset.mouseDownAt = e.clientX.toString();
-        track.classList.add("dragging")
+        track.classList.add(styles.dragging)
         console.log(e.clientX.toString())
       };
       const handleMove = (e:MouseEvent) => {

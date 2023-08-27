@@ -8,6 +8,10 @@
   align-items: center;
   padding-bottom: 20px;
   animation: bounce 0.6s 3;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
 }
 @keyframes bounce {
   0%,
@@ -19,11 +23,6 @@
   }
 }
 .img_track:hover {
-  cursor: move; /* fallback if grab cursor is unsupported */
-  cursor: grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-
   .img_wrapper {
     border: 1px solid #ffe922;
     box-shadow: 0px 27px 35px -22px rgba(255, 233, 35, 0.5);
