@@ -14,6 +14,7 @@ export default function ImageTrack() {
       };
       const handleDown = (e:MouseEvent) => {
         track.dataset.mouseDownAt = e.clientX.toString();
+        track.classList.add(styles.dragging)
         console.log(e.clientX.toString())
       };
       const handleMove = (e:MouseEvent) => {
@@ -73,6 +74,7 @@ export default function ImageTrack() {
       const handleUp = (e:any) => {
         track.dataset.mouseDownAt = "0";
         track.dataset.prevPercentage = track.dataset.percentage;
+        track.classList.remove(styles.dragging)
       };
       window.onmouseup = e => handleUp(e) 
       window.ontouchend = e => handleUp(e)
@@ -90,7 +92,7 @@ export default function ImageTrack() {
         data-mouse-down-at="0"
         data-prev-percentage="0"
       >
-        <i className={`${styles.double_chevron} ${styles.bounce} ${styles.animated}`}></i>
+        <i className={styles.double_chevron}></i>
         <div className={styles.img_wrapper}>
           <Image
             src="/spaceSnap.png"
