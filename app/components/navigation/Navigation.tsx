@@ -46,7 +46,7 @@ const Navigation = () => {
             <Link href="/about" className={styles.nav_links_left}>
               ABOUT
             </Link>
-            <Link href="https://www.dropbox.com/scl/fi/fxeh890qt73qfxc5es1pn/Jose-Padilla-Resume.pdf?rlkey=nuf5zs2xubmpn0v37qaunyhc0&dl=0" className={styles.nav_links_left} target="blank">
+            <Link href="https://docs.google.com/document/d/16u-T-vbFE0ac9BuiN2m9Afp2Umcgq3cMpB3fss5vx4o/edit" className={styles.nav_links_left} target="blank">
               RESUME
             </Link>
           </div>
