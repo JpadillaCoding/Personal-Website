@@ -23,7 +23,7 @@ export default function ImageTrack() {
         const prevPercentage = track.dataset.prevPercentage;
         if (mouseDownValue !== undefined && prevPercentage !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.clientX;
-          const maxDelta = window.innerWidth / 3;
+          const maxDelta = window.innerWidth / 1.2;
 
           const percentage = (mouseDelta / maxDelta) * -100;
           const nextPercentageUnconstrained =
@@ -51,7 +51,7 @@ export default function ImageTrack() {
         const prevPercentage = track.dataset.prevPercentage;
         if (mouseDownValue !== undefined && prevPercentage !== undefined) {
           const mouseDelta = parseFloat(mouseDownValue) - e.touches[0].clientX;
-          const maxDelta = window.innerWidth / 1 /* on mobile it's lower so images won't zoom through*/
+          const maxDelta = window.innerWidth / .5 /* on mobile it's lower so images won't zoom through*/
           const percentage = (mouseDelta / maxDelta) * -100;
           const nextPercentageUnconstrained =
             parseFloat(prevPercentage) + percentage;
