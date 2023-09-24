@@ -21,7 +21,7 @@ export default function Portfolio() {
           src={"/hackLa.png"}
           title={"HackForLA- Software Engineer volunteer"}
           alt={"screen shot of hack for LA homepage"}
-          tech={"Typscript, React, Python, Redux, PostgresSQL, AWS, Docker"}
+          tech={"Typscript, React, Python, Redux, PostgresSQL, AWS, Docker, Figma"}
           link={"https://www.hackforla.org/"}
           description={
             "Full stack experience by contributing to civic-minded projects that benefit the communities of the greater LA area."
