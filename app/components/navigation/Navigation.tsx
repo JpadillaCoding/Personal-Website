@@ -47,7 +47,7 @@ const Navigation = () => {
               ABOUT
             </Link>
             <Link href="https://docs.google.com/document/d/16u-T-vbFE0ac9BuiN2m9Afp2Umcgq3cMpB3fss5vx4o/edit" className={styles.nav_links_left} target="blank">
-              RESUME
+              EXTRA
             </Link>
           </div>
           <div className={styles.nav_right_items_wrapper}>
