@@ -1,3 +1,4 @@
+import TechIcons from "./components/tech Icons/tech_icons";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
       </div>
       <div className="divider">
       </div>
+      <TechIcons />
     </main>
   );
 }
