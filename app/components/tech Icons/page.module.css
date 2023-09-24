@@ -1,3 +1,4 @@
+
 .icon_container {
     display: flex;
     gap: 15px;
@@ -5,4 +6,18 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 70px 80px 0px 80px;
+    .svg_icons {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon_container {
+        margin: 70px 0px 0px 0px;
+        .svg_icons {
+            height: 40px;
+            width: 40px;
+        }
+    }
 }
