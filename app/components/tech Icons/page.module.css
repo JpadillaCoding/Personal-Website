@@ -1,40 +1,36 @@
 
 .icon_container {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin: 50px 0 0 0;
     .svg_icons {
-        height: 60px;
-        width: 120px;
-        padding: 6px 6px 0 6px;
+        height: 40px;
+        width: 130px;
     }
 }
 .group_container{
     border: red solid 0px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 .individual_icon_container {
-    border: 1px solid rgba(255, 233, 35, 1);
-    box-shadow: 0 14px 14px -16px rgba(255, 233, 35, 1);
+    border: 1px solid rgba(168, 179, 207, 0.2);
     border-radius: 10px;
     background-color: #17191f;
     text-align: center;
-    padding-bottom: 12px;
+    padding: 6px 0px 6px 0px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: .75rem;
 }
 
 @media (max-width: 768px) {
     .icon_container {
+        font-size: .563rem;
+        margin-top: 50px;
         .svg_icons {
-            height: 40px;
-            width: 40px;
+            width: 80px;
         }
     }
 }

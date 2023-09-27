@@ -8,10 +8,10 @@ export default function Home() {
         <h1 className="page_title">Welcome.</h1>
         <div className="page_intro">
           <p>
-            My name is Jose Padilla. I'm a Full-Stack Developer in Houston,
+            My name is Jose Padilla. I'm a Software Engineer in Houston,
             Texas. Programming is a true enjoyment of mine since it accommodates
             my need of solving problems. Currently, I am sharpening my skills
-            with projects and volunteering as a Full-Stack Developer at Hack For
+            with projects and volunteering as a Software Engineer at Hack For
             LA.
           </p>
         </div>
