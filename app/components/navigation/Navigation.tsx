@@ -46,7 +46,7 @@ const Navigation = () => {
             <Link href="/about" className={styles.nav_links_left}>
               ABOUT
             </Link>
-            <Link href="https://docs.google.com/document/d/1jD6jqM0vsTpkHvtvKw1l26thwATqkKVP5R2MrQ4wGdI/edit" className={styles.nav_links_left} target="blank">
+            <Link href="https://docs.google.com/document/d/1jD6jqM0vsTpkHvtvKw1l26thwATqkKVP5R2MrQ4wGdI/edit?usp=sharing" className={styles.nav_links_left} target="blank">
               RESUME
             </Link>
           </div>
