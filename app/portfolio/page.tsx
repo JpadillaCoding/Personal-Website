@@ -21,10 +21,32 @@ export default function Portfolio() {
           src={"/hackLa.png"}
           title={"HackForLA- Software Engineer volunteer"}
           alt={"screen shot of hack for LA homepage"}
-          tech={"Typscript, React, Python, Redux, PostgresSQL, AWS, Docker, Figma"}
+          tech={
+            "Typscript, React, Python, Redux, PostgresSQL, AWS, Docker, Figma"
+          }
           link={"https://www.hackforla.org/"}
           description={
             "Full stack experience by contributing to civic-minded projects that benefit the communities of the greater LA area."
+          }
+        />
+        <PortfolioItem
+          src={"/spaceSnap.png"}
+          title={`SpaceSnap: NASA image searcher`}
+          alt={"preview of space snap home screen"}
+          tech={"React, Bootstrap, API, Asynchronous programming"}
+          link={"https://jpadillacoding.github.io/SpaceSnap/"}
+          description={
+            "Search through NASA's image database with real time images and info about the image."
+          }
+        />
+        <PortfolioItem
+          src={"/trivia.png"}
+          title={"WDYKT Trivia: A trivia game"}
+          alt={"preview of trivia game homescreen"}
+          tech={"Javascript, DOM manipulation, Storybook"}
+          link={"https://jpadillacoding.github.io/WDYKT-Trivia/"}
+          description={
+            "Trivia game with random tidbit information that I know. It's what I'm known for!"
           }
         />
         <PortfolioItem
@@ -40,36 +62,24 @@ export default function Portfolio() {
           }
         />
         <PortfolioItem
-          src={"/calorieTrakr.png"}
-          title={"CalorieTrakr: Web app to track nutrition"}
-          alt={"preview of calorie trakr homescreen"}
-          tech={"Node.js, Express.js, React, JWT, MongoDB"}
-          link={"https://github.com/JpadillaCoding/Front-end-MERN-Project"}
-          description={"Collaborative project that helps track micro and macro nutrient intake."}
-        />
-        <PortfolioItem
           src={"/nycApi.png"}
           title={"NYC Amenities: API for amenities in NYC parks"}
           alt={"preview of NYC amenities api documentation"}
           tech={"Node.js, Express.js, MongoDB, REST API, Postman, Apidocs"}
           link={"https://github.com/JpadillaCoding/NYC-parks-and-amenities"}
-          description={"API that takes in data from NYC's OpenAPI to bundle amenities at parks in all 5 boroughs."}
+          description={
+            "API that takes in data from NYC's OpenAPI to bundle amenities at parks in all 5 boroughs."
+          }
         />
         <PortfolioItem
-          src={"/spaceSnap.png"}
-          title={"SpaceSnap: NASA image searcher"}
-          alt={"preview of space snap home screen"}
-          tech={"React, Bootstrap, API, Asynchronous programming "}
-          link={"https://github.com/JpadillaCoding/SpaceSnap"}
-          description={"Search through NASA's image database with real time images and info about the image."}
-        />
-        <PortfolioItem
-          src={"/trivia.png"}
-          title={"WDYKT Trivia: A trivia game"}
-          alt={"preview of trivia game homescreen"}
-          tech={"Javascript, DOM manipulation, Storybook"}
-          link={"https://github.com/JpadillaCoding/WDYKT-Trivia"}
-          description={"Trivia game with random tidbit information that I know. It's what I'm known for!"}
+          src={"/calorieTrakr.png"}
+          title={"CalorieTrakr: Web app to track nutrition"}
+          alt={"preview of calorie trakr homescreen"}
+          tech={"Node.js, Express.js, React, JWT, MongoDB"}
+          link={"https://aesthetic-raindrop-2c9eee.netlify.app/"}
+          description={
+            "Collaborative project that helps track micro and macro nutrient intake."
+          }
         />
       </div>
     </main>
