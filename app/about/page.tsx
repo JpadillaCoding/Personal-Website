@@ -8,7 +8,7 @@ export default function About() {
         <div className="page_intro">
           <p>
             Major milestones through my developer journey. I started as a
-            self-taught, joined formalized education, and am currently gaining
+            self-taught, formalized my education, and am currently gaining
             experience as a Software Engineer volunteer!
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function About() {
             <h2>First exposure</h2>
             <p>
               Dabbled with HTML and CSS in Highschool. I did some after school
-                            activities to learn. Although MySpace was phased out, I still used
+              activities to learn. Although MySpace was phased out, I still used
               it to practice HTML and CSS.
             </p>
           </div>
@@ -40,8 +40,9 @@ export default function About() {
             <h2>Basic Programming Refresher</h2>
             <p>
               I played around with free resources. FreeCodeCamp and mobile apps
-              that taught a bit of javascript. Unfortunately, covid hit and life
-              took my attention away from programming.
+              that taught a bit of Javascript. I continued making small projects
+              and creating neat things on my computer and on CodePen throughout
+              the years.
             </p>
           </div>
         </div>
@@ -55,9 +56,9 @@ export default function About() {
           <div className={styles.content}>
             <h2>Self Teaching With FreeCodeCamp</h2>
             <p>
-              I remembered enjoying programming from my past exposure. At
-              this point I'm already established in my career as a process
-              technician, but I want to start doing something I really enjoy. I
+              At this point, I'm already established in my career as a process
+              technician where I learned to be a leader and manage projects with
+              teams, but I want to start doing something I really enjoy. I
               started solidifying my knowledge with more FreeCodeCamp courses-
               Responsive web design, Javascript, Algorithms and Data structures.
             </p>
@@ -74,11 +75,11 @@ export default function About() {
             <h2>More Rigor With Harvard's CS50</h2>
             <p>
               Online recommendations pointed to trying out Harvards CS50 since
-              it taught fundamentals. I decided to try it out and see if
-              programming could be an enjoyable career change. Lessons were
-              taught in C to teach students what's going in behind the scenes of
-              modern languages. In the end, this solidified my journey and I
-              started looking into my options to formalize my learning.
+              it taught Computer Science fundamentals. Lessons were taught in C
+              to teach students what's going in behind the scenes of modern
+              languages. Major things covered included abstraction, algorithms,
+              data structures, encapsulation, resource management, security,
+              software engineering, and web development
             </p>
           </div>
         </div>
@@ -110,7 +111,7 @@ export default function About() {
           className={`${styles.content_container}
          ${styles.right}`}
         >
-          <h3 className={styles.date}>May 2023</h3>
+          <h3 className={styles.date}>April 2023</h3>
           <div className={styles.content}>
             <h2>Software Engineer Volunteer With Hack For LA- Website Team</h2>
             <p>
@@ -135,9 +136,9 @@ export default function About() {
             <h2>Curl Safe</h2>
             <p>
               Made a mobile app from scratch using React Native. The app was
-              made for a forum that had a need of analyzing ingredients in hair
-              products. I got 100+ downloads along with the opportunity to
-              learn Google Cloud Services, solidified my FrontEnd and BackEnd
+              made for a forum that needed to analyze ingredients in hair
+              products. I got 100+ downloads along with the opportunity to learn
+              Google Cloud Services and solidifying my Front-End and Back-End
               skills.
             </p>
           </div>
@@ -155,7 +156,8 @@ export default function About() {
               Noticed that a technology in demand is Typescript, so I joined the
               Home Unite Us Project to grow that skill and also keep my Python
               skills up to date. I joined this project during its development
-              phase and have gotten to contribute from scratch.
+              phase and have contributed by implementing features with our backend, upgrading
+              security, and making UX/UI designs come to life.
             </p>
           </div>
         </div>

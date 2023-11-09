@@ -1,3 +1,7 @@
+//Archieved for being too buggy across browsers.
+//SSR is not the best for having all these touch/mouse events
+//Kept code because it's still a really cool carousel possibly used in the future
+
 'use client'
 import React, { useEffect } from "react";
 import Image from "next/image";
