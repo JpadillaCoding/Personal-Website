@@ -156,8 +156,29 @@ export default function About() {
               Noticed that a technology in demand is Typescript, so I joined the
               Home Unite Us Project to grow that skill and also keep my Python
               skills up to date. I joined this project during its development
-              phase and have contributed by implementing features with our backend, upgrading
-              security, and making UX/UI designs come to life.
+              phase and have contributed by implementing features with our
+              backend, upgrading security, and making UX/UI designs come to
+              life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.timeline}>
+        <div
+          className={`${styles.content_container}
+         ${styles.left}`}
+        >
+          <h3 className={styles.date}>November 2023</h3>
+          <div className={styles.content}>
+            <h2>Flow Lobby- Social media platform</h2>
+            <p>
+              I noticed a productivity increase with my code production at Hack For
+              LA. I used this increase in performance to join another project in
+              tandem with Hack For LA to work on my programming skillset. Here,
+              I've implemented resuable and scalable React Native components for
+              a social media application. With a start-up environment, I have
+              been able to contribute a significant amount to our beta app and
+              have been more involved in design and architecture planning.
             </p>
           </div>
         </div>
