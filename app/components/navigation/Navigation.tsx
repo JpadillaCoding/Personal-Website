@@ -7,6 +7,7 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -46,7 +47,7 @@ const Navigation = () => {
             <Link href="/about" className={styles.nav_links_left}>
               ABOUT
             </Link>
-            <Link href="https://docs.google.com/document/d/1jD6jqM0vsTpkHvtvKw1l26thwATqkKVP5R2MrQ4wGdI/edit?usp=sharing" className={styles.nav_links_left} target="blank">
+            <Link href="https://josepadillaresume.tiiny.site/" className={styles.nav_links_left} target="blank">
               RESUME
             </Link>
           </div>
@@ -62,6 +63,14 @@ const Navigation = () => {
             <a href="https://github.com/JpadillaCoding" target="blank">
               <FontAwesomeIcon
                 icon={faGithub}
+                size="2xl"
+                color="#6f7174"
+                className={styles.nav_links_right}
+              />
+            </a>
+            <a href="https://medium.com/@jose.apadilla99" target="blank">
+              <FontAwesomeIcon 
+                icon={faMedium}
                 size="2xl"
                 color="#6f7174"
                 className={styles.nav_links_right}
