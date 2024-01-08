@@ -68,17 +68,17 @@ const Navigation = () => {
                 className={styles.nav_links_right}
               />
             </a>
-            <a href="https://twitter.com/__Obelus" target="blank">
-              <FontAwesomeIcon
-                icon={faTwitter}
+            <a href="https://medium.com/@jose.apadilla99" target="blank">
+              <FontAwesomeIcon 
+                icon={faMedium}
                 size="2xl"
                 color="#6f7174"
                 className={styles.nav_links_right}
               />
             </a>
-            <a href="https://medium.com/@jose.apadilla99" target="blank">
-              <FontAwesomeIcon 
-                icon={faMedium}
+            <a href="https://twitter.com/__Obelus" target="blank">
+              <FontAwesomeIcon
+                icon={faTwitter}
                 size="2xl"
                 color="#6f7174"
                 className={styles.nav_links_right}
