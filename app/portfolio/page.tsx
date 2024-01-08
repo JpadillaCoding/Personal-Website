@@ -17,6 +17,14 @@ export default function Portfolio() {
       </div>
       <div className="divider"></div>
       <div className={styles.portfolio_items_wrapper}>
+        <PortfolioItem 
+          src={"/flowlobby.png"}
+          title={"FlowLobby: Gamer Social Media Platform"}
+          alt={"Landing page of the flow lobby website"}
+          tech={"React Native, Figma, Expo"}
+          link={"https://www.flowlobby.app/"}
+          description={"Start-up mobile company with a mobile application in which I contributed to the front-end development"}
+        />
         <PortfolioItem
           src={"/hackLa.png"}
           title={"HackForLA- Software Engineer volunteer"}

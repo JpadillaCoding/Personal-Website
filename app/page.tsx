@@ -12,7 +12,7 @@ export default function Home() {
             Texas. Programming is a true enjoyment of mine since it accommodates
             my need of solving problems. Currently, I am sharpening my skills
             with projects and volunteering as a Software Engineer at Hack For
-            LA.
+            LA and Flow Lobby.
           </p>
         </div>
       </div>
